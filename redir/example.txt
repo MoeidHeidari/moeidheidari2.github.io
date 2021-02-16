@@ -1,2 +1,0 @@
-http://localhost:8080/api/redir?type="HERO"
-http://localhost:8080/api/redir?type="DSLR"
