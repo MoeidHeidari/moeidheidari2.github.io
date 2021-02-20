@@ -263,9 +263,9 @@
                   <div class="card component-card_2">
                       <img src="assets/img/MainPageImages/LLVM.png" class="card-img-top" alt="widget-card-2">
                       <div class="card-body">
-                          <h5 class="card-title">LLVM talks</h5>
+                          <h5 class="card-title">LLVM meetings</h5>
                           <p class="card-text">The meeting serves as a forum for LLVM, Clang, LLDB and other LLVM project developers and users to get acquainted, learn how LLVM is used, and exchange ideas about LLVM and its (potential) applications.</p>
-                          <a href="#" class="btn btn-primary">Explore More</a>
+                          <a href="https://llvm.org/devmtg/" class="btn btn-primary">Explore</a>
                       </div>
                   </div>
                   </div>
@@ -286,7 +286,14 @@
                                 <h6>Micro-architectural optimization</h6>
 
                                 <p class="">Is generally about implemented using a sequence of optimizing transformations, algorithms which take a program and transform it to produce a semantically equivalent output program that uses fewer resources and/or executes faster. It has been shown that some code optimization problems are NP-complete, or even undecidable. In practice, factors such as the programmer's willingness to wait for the compiler to complete its task place upper limits on the optimizations that a compiler might provide. Optimization is generally a very CPU- and memory-intensive process. Performance understanding is directly connected to the understanding of optimization. Compiler frond end structure nowadays solved the problem of understanding codes and languages.
-                                Thus the challenging part remained unsolved is the optimization and the complexity of it.</p>
+                                Thus the challenging part remained unsolved is the optimization and the complexity of it.
+                                Performance matters, and so does repeatability and
+                                predictability. Today’s processors’ micro-architectures have become so complex as to now contain many undocumented, not
+                                understood, and even puzzling performance cliffs. Small changes
+                                in the instruction stream, such as the insertion of a single NOP
+                                instruction, can lead to significant performance deltas, with the
+                                effect of exposing compiler and performance optimization efforts
+                                to perceived unwanted randomness.</p>
 
                             </div>
                         </div>
