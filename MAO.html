@@ -13,6 +13,7 @@
     <link href="assets/css/elements/miscellaneous.css" rel="stylesheet" type="text/css" />
   <link href="assets/css/elements/breadcrumb.css" rel="stylesheet" type="text/css" />
    <link href="assets/css/components/custom-carousel.css" rel="stylesheet" type="text/css" />
+   <link href="assets/css/components/custom-list-group.css" rel="stylesheet" type="text/css">
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
@@ -24,6 +25,8 @@
         /*.navbar .navbar-item.navbar-dropdown {
             margin-left: auto;
         }*/
+
+
         .layout-px-spacing {
             min-height: calc(100vh - 184px)!important;
         }
@@ -33,7 +36,7 @@
     <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
 
 </head>
-<body class="sidebar-noneoverflow">
+<body class="sidebar-noneoverflow" data-spy="scroll" data-target="#navSection" data-offset="100">
 
     <!--  BEGIN NAVBAR  -->
     <div class="header-container">
@@ -55,13 +58,12 @@
     <!--  END NAVBAR  -->
 
     <!--  BEGIN MAIN CONTAINER  -->
-    <div class="main-container" id="container">
+    <div class="main-container " id="container">
 
         <div class="overlay"></div>
         <div class="search-overlay"></div>
-
         <!--  BEGIN TOPBAR  -->
-        <div class="topbar-nav header navbar" role="banner">
+        <div class="topbar-nav header navbar" role="banner" >
             <nav id="topbar">
                 <ul class="navbar-nav theme-brand flex-row  text-center">
                     <li class="nav-item theme-logo">
@@ -135,6 +137,19 @@
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                                 <span>Resources</span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="menu2" data-parent="#topAccordion">
+
+
+                        </ul>
+                    </li>
+                    <li class="menu single-menu">
+                        <a href="#menu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle autodroprown">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                <span>Tools</span>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </a>
@@ -235,9 +250,27 @@
 
                 <div class="row layout-top-spacing">
 
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-12 layout-spacing">
-                        <div class="widget-content-area br-4">
-                            <div class="widget-one">
+
+                  <div class="col-xl-3" id="navSection">
+                    <div class="list-group ">
+                        <a href="#Welcome" class="list-group-item list-group-item-action nav-link">Welcome</a>
+                        <a href="#MAO" class="list-group-item list-group-item-action nav-link">Micro-architectural optimization</a>
+
+                    </div>
+                  </div>
+                  <div class="col-xl-9 row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+                        <div class="widget-content-area br-4" >
+                            <div class="widget-one" id="MAO">
+
+                                <h6>Welcome</h6>
+
+                                <p class="">Welcome to my website. Here you can find a bunch of information about software optimization and specifically Micro-architectural optimization. Some sort of valuable researches, tutorials, tools, and resources are available. It is the all-in-one place for those looking for necessary information and a pathway of the compiler and micro-architectural optimization.</p>
+
+                            </div>
+                        </div>
+                        <div class="widget-content-area br-4" style="margin-top:10px">
+                            <div class="widget-one" id="Welcome">
 
                                 <h6>Micro-architectural optimization</h6>
 
@@ -246,6 +279,11 @@
                             </div>
                         </div>
                     </div>
+                  </div>
+
+
+
+
 
                 </div>
 
@@ -253,8 +291,11 @@
                 <!-- CONTENT AREA -->
 
             </div>
-            <div class="footer-wrapper">
-                <div class="footer-section f-section-1">
+
+
+            </div>
+            <div class="footer-wrapper ">
+                <div class="footer-section f-section-1 ">
                     <p class="">Copyright © 2020, All rights reserved.</p>
                 </div>
                 <div class="footer-section f-section-2">

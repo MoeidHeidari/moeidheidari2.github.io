@@ -174,7 +174,7 @@ code {
 .layout-px-spacing {
   padding: 0 32px !important; }
 
-/* 
+/*
 =====================
     Navigation Bar
 =====================
@@ -777,7 +777,7 @@ code {
 /*
     ====================
         More Dropdown
-    ====================    
+    ====================
 */
 /*
     Footer
@@ -904,7 +904,7 @@ code {
       margin: 0 32px;
       width: 100%;
       border-radius: 8px;
-      background: #191e3a;
+      
       min-height: 51px; }
     .topbar-nav.header nav#topbar ul.menu-categories {
       display: flex;
