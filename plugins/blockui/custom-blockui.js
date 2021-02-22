@@ -4,14 +4,14 @@ $('#block-page').on('click', function() {
         fadeIn: 800, 
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#1b2024',
             opacity: 0.8,
             zIndex: 1200,
             cursor: 'wait'
         },
         css: {
             border: 0,
-            color: '#25d5e4',
+            color: '#fff',
             zIndex: 1201,
             padding: 0,
             backgroundColor: 'transparent'
@@ -26,13 +26,13 @@ $('#block-content').on('click', function() {
         message: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader spin"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>',
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#000',
             opacity: 0.8,
             cursor: 'wait'
         },
         css: {
             border: 0,
-            color: '#25d5e4',
+            color: '#fff',
             padding: 0,
             backgroundColor: 'transparent'
         }
@@ -70,7 +70,7 @@ $('#message-position').on('click', function() {
         centerX: 0,
         centerY: 0,
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#fff',
             opacity: 0.8,
             cursor: 'wait'
         },
@@ -80,7 +80,6 @@ $('#message-position').on('click', function() {
             left: '',
             right: '10px',
             bottom: 0,
-            color: '#25d5e4',
             border: 0,
             padding: 0,
             backgroundColor: 'transparent'
@@ -96,14 +95,13 @@ $('#auto-unblock').on('click', function() {
         message: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader spin"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg>',
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#fff',
             opacity: 0.8,
             cursor: 'wait'
         },
         css: {
             border: 0,
             padding: 0,
-            color: '#25d5e4',
             backgroundColor: 'transparent'
         }
     });
@@ -116,14 +114,14 @@ $('#block-callback').on('click', function() {
         fadeIn: 800, 
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#1b2024',
             opacity: 0.8,
             zIndex: 1200,
             cursor: 'wait'
         },
         css: {
             border: 0,
-            color: '#25d5e4',
+            color: '#fff',
             zIndex: 1201,
             padding: 0,
             backgroundColor: 'transparent'
@@ -141,14 +139,14 @@ $('#default-message').on('click', function() {
         message: '<span class="text-semibold">Please wait...</span>',
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#fff',
             opacity: 0.8,
             cursor: 'wait'
         },
         css: {
             border: 0,
             padding: 0,
-            color: '#25d5e4',
+            color: '#e7515a',
             backgroundColor: 'transparent'
         }
     });
@@ -163,14 +161,14 @@ $('#message-animation').on('click', function() {
         message: $('.blockui-animation-container'),
         timeout: 3000, //unblock after 3 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#fff',
             opacity: 0.8,
             cursor: 'wait'
         },
         css: {
             width: 36,
             height: 36,
-            color: '#25d5e4',
+            color: '#000',
             border: 0,
             padding: 0,
             backgroundColor: 'transparent'
@@ -192,7 +190,7 @@ $('#modal-blockui').on('click', function() {
         timeout: 2000, //unblock after 2 seconds
         css: {
             border: 0,
-            color: '#25d5e4',
+            color: '#000',
             padding: 0,
             backgroundColor: 'transparent'
         }
@@ -227,18 +225,18 @@ $('#custom-message').on('click', function() {
         message: '<span class="text-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader spin position-left"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></svg></i>&nbsp; Updating data</span>',
         timeout: 2000, //unblock after 2 seconds
         overlayCSS: {
-            backgroundColor: '#191e3a',
-            opacity: 1,
+            backgroundColor: '#fff',
+            opacity: 0.8,
             cursor: 'wait'
         },
         css: {
             border: 0,
             padding: '10px 15px',
-            color: '#0e1726',
+            color: '#fff',
             width: 'auto',
             '-webkit-border-radius': 2,
             '-moz-border-radius': 2,
-            backgroundColor: '#009688'
+            backgroundColor: '#0e1726'
         }
     });
 });
@@ -250,7 +248,7 @@ $('#multiple-messages').on('click', function() {
     $(block).block({ 
         message: message,
         overlayCSS: {
-            backgroundColor: '#191e3a',
+            backgroundColor: '#fff',
             opacity: 0.8,
             cursor: 'wait'
         },

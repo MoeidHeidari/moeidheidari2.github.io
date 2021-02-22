@@ -6,7 +6,7 @@
 
 .widget-card-four {
   padding: 25px 32px;
-  background: $m-color_10;
+  background: $white;
 
   .w-content {
     display: flex;
@@ -17,7 +17,7 @@
     h6 {
       font-weight: 600;
       margin-bottom: 0;
-      color: $m-color_3;
+      color: $m-color_10;
       font-size: 23px;
       letter-spacing: 0;
     }
@@ -25,14 +25,14 @@
     p {
       font-weight: 600;
       margin-bottom: 0;
-      color: $l-secondary;
+      color: $secondary;
       font-size: 16px;
     }
   }
 
   .w-icon {
-    color: $l-secondary;
-    background-color: $secondary;
+    color: $secondary;
+    background-color: $l-secondary;
     height: 45px;
     display: inline-flex;
     width: 45px;
@@ -50,7 +50,7 @@
     height: 22px;
     padding: 4px;
     border-radius: 20px;
-    box-shadow: none;
+    box-shadow: (0 2px 2px rgba(224, 230, 237, 0.4588235294),);
   }
 
   .progress-bar {
@@ -60,7 +60,7 @@
       content: '';
       height: 7px;
       width: 7px;
-      background: $m-color_10;
+      background: $white;
       position: absolute;
       right: 3px;
       border-radius: 50%;

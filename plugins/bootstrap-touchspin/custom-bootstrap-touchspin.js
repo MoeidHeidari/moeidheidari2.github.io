@@ -28,8 +28,8 @@ $("input[name='demo2']").TouchSpin({
 // Multiple select boxes
 $("input[name='demo_vertical']").TouchSpin({
     verticalbuttons: true,
-    buttondown_class: "btn btn-classic btn-info",
-    buttonup_class: "btn btn-classic btn-danger"
+    buttondown_class: "btn btn-classic btn-outline-info",
+    buttonup_class: "btn btn-classic btn-outline-danger"
 });
 
 
@@ -52,7 +52,7 @@ $("input[name='demo3_21']").TouchSpin({
 // Button postfix
 $("input[name='demo4']").TouchSpin({
     postfix: "Button",
-    postfix_extraclass: "btn btn-info",
+    postfix_extraclass: "btn btn-outline-info",
     buttondown_class: "btn btn-classic btn-primary",
     buttonup_class: "btn btn-classic btn-primary"
 });

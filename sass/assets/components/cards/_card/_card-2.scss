@@ -1,12 +1,13 @@
 /*
-  Component Card 2
+	Component Card 2
 */
 
 .component-card_2 {
-  border: 1px solid $m-color_12;
+  border: 1px solid $m-color_3;
   border-radius: 6px;
   width: 18rem;
   margin: 0 auto;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .card-body {
     padding: 22px 20px;

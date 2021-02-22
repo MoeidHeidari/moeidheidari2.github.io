@@ -5,7 +5,7 @@
 */
 
 .widget-card-two {
-  background: $m-color_10;
+  background: $white;
   padding: 20px 0px;
 
   .media {
@@ -13,7 +13,7 @@
     padding-right: 15px;
     margin-bottom: 19px;
     padding-bottom: 21px;
-    border-bottom: 1px dashed $dark;
+    border-bottom: 1px dashed $m-color_3;
 
     .w-img {
       margin-right: 10px;
@@ -58,7 +58,7 @@
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      border: 2px solid $dark;
+      border: 2px solid $m-color_3;
 
       &:not(:last-child) {
         margin-right: 5px;

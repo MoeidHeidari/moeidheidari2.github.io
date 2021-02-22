@@ -1,6 +1,6 @@
 /*
 
-    Toggle
+  Toggle
 
 */
 
@@ -9,36 +9,27 @@
     &[class*="s-outline-"] .slider:before {
       bottom: 1px;
       left: 1px;
-      border: 2px solid $m-color_6;
-      background-color: $m-color_6;
+      border: 2px solid $m-color_4;
+      background-color: $m-color_4;
     }
 
     .slider {
-      border: 2px solid $m-color_6;
+      border: 2px solid $m-color_4;
     }
   }
 
   &.s-icons {
-    &.s-outline-success {
+    &.s-outline-primary {
       color: $primary;
       margin: 0 3px 0 11px;
     }
 
     .slider:before {
-      content: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>') !important;
+      content: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%231b55e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>') !important;
     }
 
     input:checked + .slider:before {
       content: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>') !important;
-    }
-  }
-
-  &.s-outline-success input:checked + .slider {
-    border-color: $m-color_14;
-
-    &:before {
-      border: 2px solid $m-color_14;
-      background-color: $m-color_14;
     }
   }
 }
@@ -71,11 +62,11 @@
   padding: 35px 35px;
   position: relative;
   color: $dark;
-  border: 1px solid rgba(25, 30, 58, 0.5411764705882353);
-  background-color: $m-color_12;
+  border: 1px solid $m-color_3;
+  background-color: $white;
 
   &:hover {
-    box-shadow: 0px 0px 15px 1px rgba(25, 30, 58, 0.7215686275);
+    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
   }
 
   &:first-of-type {
@@ -131,7 +122,7 @@
   strong {
     font-size: 32px;
     font-weight: 600;
-    color: $m-color_4;
+    color: $dark;
     margin-right: 5px;
     line-height: 30px;
   }
@@ -139,7 +130,7 @@
 
 .pricing-plan-features {
   strong {
-    color: $m-color_3;
+    color: $m-color_10;
     font-weight: 600;
     margin-bottom: 5px;
     line-height: 24px;
@@ -165,10 +156,12 @@
 }
 
 .pricing-plan .button {
-  &:hover {}
-
   border: none;
   padding: 10px;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(102, 103, 107, 0.15);
+  }
 }
 
 .billed-yearly-radio {
@@ -184,20 +177,19 @@
     }
 
     &.txt-monthly {
-      color: $m-color_14;
+      color: $primary;
       font-weight: 700;
     }
   }
 
   &.billed-yearly-switch span.txt-yearly {
-    color: $m-color_14;
+    color: $primary;
     font-weight: 700;
   }
 
   span.txt-yearly span.badge {
     visibility: hidden;
     padding: 4px 11px;
-    background-color: $m-color_14;
   }
 
   &.billed-yearly-switch span.txt-yearly span.badge {
@@ -213,13 +205,13 @@
 
 .pricing-plan {
   &.recommended {
-    box-shadow: -1px 0 10px 0 rgba(0,0,0,.14), -3px 0 18px 0 rgba(0,0,0,.12);;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.09);
     padding: 35px;
     margin: 6rem 0 0 0;
   }
 
   .recommended-badge {
-    background-color: $m-color_18;
+    background-color: $primary;
     color: $white;
     position: absolute;
     width: 100%;
@@ -239,7 +231,7 @@
   color: $l-dark;
 
   strong {
-    color: $m-color_14;
+    color: $primary;
     font-weight: 700;
     font-size: 44px;
   }
@@ -247,18 +239,18 @@
 
 .pricing-plan.recommended .button {
   color: #fff !important;
-  background-color: $m-color_18 !important;
+  background-color: $primary !important;
 }
 
 @media (max-width: 767px) {
   .pricing-plan {
     &:first-of-type {
-      border-right: 1px solid $m-color_12;
+      border-right: 1px solid $m-color_3;
       border-radius: 6px;
     }
 
     &:last-of-type {
-      border-left: 1px solid $m-color_12;
+      border-left: 1px solid $m-color_3;
       border-radius: 6px;
     }
   }

@@ -5,9 +5,9 @@
 @import '../../base/base';    // Base Variables
 
 .section {
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
 }
 .layout-spacing {
     padding-bottom: 25px;
@@ -30,9 +30,9 @@
 }
 
 .general-info .info h6, .about .info h5, .work-platforms .info h5, .contact .info h5, .social .info h5, .skill .info h5, .edu-experience .info h5, .work-experience .info h5 {
-  color: $m-color_4;
+  color: $dark;
   margin: 4px 8px 40px 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -42,7 +42,7 @@
 */
 
 .general-info {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .info, .save-info {
@@ -55,12 +55,18 @@
     }
 
     .upload {
-      border-right: 1px solid $m-color_18;
+      border-right: 1px solid $m-color_2;
 
       p {
         font-size: 14px;
         font-weight: 600;
-        color: $m-color_14;
+        color: $primary;
+
+        i {
+          font-size: 22px;
+          color: $primary;
+          vertical-align: middle;
+        }
       }
     }
 
@@ -75,10 +81,9 @@
       height: 120px;
       border: none;
       border-radius: 6px;
-      background: transparent;
 
       .dropify-preview {
-        background-color: $m-color_10;
+        background-color: $white;
         padding: 0;
       }
 
@@ -143,7 +148,7 @@
 */
 
 .about {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .info, .save-info {
@@ -162,7 +167,7 @@
 */
 
 .work-platforms {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .info {
@@ -187,7 +192,7 @@
 */
 
 .contact {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .info, .save-info {
@@ -206,7 +211,7 @@
 */
 
 .social {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .info, .save-info {
@@ -220,10 +225,8 @@
   }
 }
 
-.input-group {
-  .input-group-prepend .input-group-text svg, &:hover .input-group-prepend .input-group-text svg {
-    color: $m-color_14;
-  }
+.input-group .input-group-prepend .input-group-text svg {
+  color: $primary;
 }
 
 .social .info input {
@@ -235,7 +238,7 @@
 */
 
 .skill {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .input-form {
@@ -261,7 +264,6 @@
     font-weight: 700;
     margin-bottom: 0;
     margin-top: 0;
-    color: $m-color_6;
   }
 
   .save-info {
@@ -289,15 +291,11 @@
 
     .range-count-number {
       display: inline-block;
-      background: $m-color_12;
+      background: #ffffff;
       padding: 3px 8px;
       border-radius: 5px;
-      color: $m-color_14;
-      border: 1px solid $m-color_12;
-    }
-
-    .range-count-unit {
-      color: $m-color_14;
+      color: $primary;
+      border: 1px solid $m-color_3;
     }
   }
 
@@ -311,7 +309,7 @@
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
-      background: $m-color_14;
+      background: $primary;
       cursor: pointer;
       height: 16px;
       width: 16px;
@@ -326,7 +324,7 @@
     }
 
     &:focus::-webkit-slider-thumb {
-      background: $m-color_14;
+      background: $primary;
       cursor: pointer;
       height: 16px;
       width: 16px;
@@ -335,7 +333,7 @@
     }
 
     &::-moz-range-thumb {
-      background: $m-color_14;
+      background: $primary;
       cursor: pointer;
       height: 16px;
       width: 16px;
@@ -344,18 +342,12 @@
   }
 }
 
-input[type=range] {
-  &::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track {
-    background: $m-color_18;
-  }
-}
-
 /*
     Education and Experience
 */
 
 .edu-experience {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .edu-section {
@@ -386,7 +378,7 @@ input[type=range] {
 */
 
 .work-experience {
-  background-color: $m-color_10;
+  background-color: $white;
   border-radius: 6px;
 
   .work-section {
@@ -417,12 +409,12 @@ input[type=range] {
 */
 
 .account-settings-footer {
-  background: $m-color_18;
+  background: #191e3a;
   padding: 12px 20px;
-  -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid $m-color_18;
+  -webkit-box-shadow: -2px -9px 20px rgba(126, 142, 177, 0.12);
+  -moz-box-shadow: -2px -9px 20px rgba(126, 142, 177, 0.12);
+  box-shadow: -2px -9px 20px rgba(126, 142, 177, 0.12);
+  border-top: 1px solid $m-color_1;
   border-radius: 6px 6px 0 0;
   z-index: 5;
 

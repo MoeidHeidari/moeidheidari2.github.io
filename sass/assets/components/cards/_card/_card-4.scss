@@ -1,13 +1,15 @@
 /*
-  Component Card 4
+	Component Card 4
 */
 
 .component-card_4 {
   width: 30rem;
   margin: 0 auto;
   border: none;
-  border: 1px solid $m-color_12;
+  border: 1px solid $m-color_3;
   border-radius: 8px;
+  -webkit-box-shadow: 4px 6px 10px -3px $m-color_4;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .card-body {
     padding: 0;
@@ -54,7 +56,7 @@
   }
 
   .card-text {
-    color: $m-color_4;
+    color: $m-color_9;
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 600;

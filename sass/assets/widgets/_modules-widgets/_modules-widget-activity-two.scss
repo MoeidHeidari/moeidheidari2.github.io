@@ -1,21 +1,22 @@
 .widget {
   &.widget-activity-two {
     position: relative;
-    background: $m-color_10;
+    background: $white;
     border-radius: 8px;
     height: 100%;
 
     .widget-heading {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px dashed $dark;
+      border-bottom: 1px dashed $m-color_3;
       padding: 20px 20px;
       padding-bottom: 20px;
 
       h5 {
         font-size: 17px;
         display: block;
-        color: $m-color_3;
+        color: $m-color_10;
+        font-weight: 600;
         margin-bottom: 0;
       }
     }
@@ -119,7 +120,12 @@
       color: $m-color_4;
       font-weight: 600;
 
-      span, a {
+      span {
+        color: $m-color_9;
+        font-weight: 600;
+      }
+
+      a {
         color: $m-color_6;
         font-weight: 600;
       }

@@ -81,7 +81,7 @@ a {
 
 .fc-unthemed {
   .fc-content, .fc-divider, .fc-list-heading td, .fc-list-view, .fc-popover, .fc-row, tbody, td, th, thead {
-    border-color: $dark;
+    border-color: $m-color_3;
   }
 
   .fc-popover {
@@ -89,11 +89,11 @@ a {
   }
 
   .fc-divider, .fc-list-heading td {
-    background: $dark;
+    background: #eee;
   }
 
   .fc-popover .fc-header {
-    background: $dark;
+    background: #eee;
 
     .fc-close {
       color: #666;
@@ -148,7 +148,6 @@ a {
   font-weight: 700;
   font-size: 200%;
   top: -7%;
-  color: $m-color_4;
 }
 
 .fc-icon-right-single-arrow:after {
@@ -156,7 +155,6 @@ a {
   font-weight: 700;
   font-size: 200%;
   top: -7%;
-  color: $m-color_4;
 }
 
 .fc-icon-left-double-arrow:after {
@@ -229,14 +227,14 @@ a {
 
 .fc-state-active, .fc-state-down, .fc-state-hover {
   color: $white;
-  background-color: $m-color_9;
+  background-color: $white;
 }
 
 .fc-state-disabled {
-  color: $m-color_3;
-  background-color: $m-color_12;
+  color: $dark;
+  background-color: #ffffff;
   text-shadow: none;
-  border: solid 1px $m-color_12;
+  border: solid 1px $m-color_3;
 }
 
 .fc-today-button {
@@ -391,7 +389,7 @@ hr.fc-divider {
     padding: 0;
     vertical-align: top;
     font-weight: 600;
-    color: $m-color_4;
+    color: $dark;
     letter-spacing: 1px;
   }
 
@@ -714,6 +712,8 @@ a.fc-more {
 }
 
 .fc-toolbar {
+  &.fc-header-toolbar {}
+
   &.fc-footer-toolbar {
     margin-top: 1em;
   }
@@ -748,7 +748,7 @@ a.fc-more {
   h2 {
     margin: 0;
     font-size: 18px;
-    color: $m-color_4;
+    color: $m-color_10;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
@@ -823,7 +823,7 @@ a.fc-more {
 .fc-basic-view {
   .fc-day-number, .fc-week-number {
     padding: 2px;
-    color: $m-color_4;
+    color: $dark;
   }
 
   th {
@@ -884,7 +884,7 @@ a.fc-more {
   vertical-align: middle;
   padding: 0 4px;
   white-space: nowrap;
-  color: $m-color_4;
+  color: $black;
 }
 
 .fc-ltr .fc-axis {
@@ -1245,10 +1245,13 @@ a.fc-more {
 }
 
 #calendar .fc-event {
-  color: $m-color_4 !important;
+  color: $dark !important;
   padding: 5px;
-  background-color: $m-color_4;
+  background-color: $white;
   border: none;
+  -webkit-box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
+  box-shadow: 0px 0px 6px 0px rgba(31, 45, 61, 0.1);
+  border: 1px solid $m-color_6;
   border-radius: 6px;
   margin: 0px 18px;
   font-size: 12px;

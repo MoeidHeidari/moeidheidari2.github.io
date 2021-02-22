@@ -5,7 +5,7 @@
 */
 
 .widget-card-one {
-  background: $m-color_10;
+  background: $white;
   padding: 20px 0;
   height: 100%;
 
@@ -15,7 +15,7 @@
       padding-right: 15px;
       margin-bottom: 19px;
       padding-bottom: 21px;
-      border-bottom: 1px dashed $dark;
+      border-bottom: 1px dashed $m-color_3;
 
       .w-img {
         margin-right: 9px;
@@ -26,7 +26,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 3px solid $m-color_18;
+        border: 3px solid $m-color_3;
       }
     }
 
@@ -61,13 +61,14 @@
       padding: 0 20px;
 
       svg {
-        color: $m-color_13;
+        color: $primary;
+        fill: $l-primary;
       }
 
       span {
         vertical-align: sub;
-        font-weight: 600;
-        color: $m-color_13;
+        font-weight: 700;
+        color: $m-color_10;
         letter-spacing: 1px;
       }
     }

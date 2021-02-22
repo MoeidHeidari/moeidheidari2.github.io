@@ -8,6 +8,7 @@
   position: relative;
 
   h5 {
+    font-weight: 700;
     font-size: 19px;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -21,7 +22,6 @@
     border-collapse: separate;
     border-spacing: 0 5px;
     margin-bottom: 0;
-    background: transparent;
 
     > {
       thead > tr > th {
@@ -37,7 +37,7 @@
         text-transform: initial;
         font-weight: 600;
         border-top: none;
-        background: $m-color_18;
+        background: $m-color_3;
         padding-top: 0;
         padding-bottom: 0;
         padding-right: 0;
@@ -57,7 +57,7 @@
         }
 
         .th-content {
-          color: $m-color_13;
+          color: $primary;
           font-weight: 600;
           font-size: 14px;
           letter-spacing: 1px;
@@ -83,7 +83,7 @@
           }
 
           > td .td-content {
-            color: $m-color_4;
+            color: $dark;
           }
         }
 
@@ -126,7 +126,7 @@
       }
 
       &.product-name {
-        color: $m-color_4;
+        color: $m-color_9;
         letter-spacing: 1px;
       }
 
@@ -175,7 +175,6 @@
         transform: none;
         letter-spacing: 1px;
         border-bottom: 1px dashed $m-color_4;
-        color: $m-color_5;
       }
     }
   }

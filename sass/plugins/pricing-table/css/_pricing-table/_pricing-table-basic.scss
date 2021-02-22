@@ -3,17 +3,17 @@
 .pricing--norbu {
   .pricing__item {
     margin: 1em;
-    color: $white;
+    color: $dark;
     cursor: default;
-    background: $m-color_12;
+    background: $white;
     border-radius: 10px;
     border: 1px solid $dark;
     -webkit-transition: border-color 0.3s, background 0.3s;
     transition: border-color 0.3s, background 0.3s;
 
     &:hover {
-      color: $m-color_14;
-      border: 1px solid $m-color_14;
+      color: $primary;
+      border: 1px solid $primary;
     }
   }
 
@@ -36,7 +36,7 @@
   }
 
   .pricing__item:hover .pricing__title::after {
-    background: $m-color_14;
+    background: $primary;
   }
 
   .icon {
@@ -89,8 +89,8 @@
     text-transform: uppercase;
     flex: none;
     padding: 12px 45px;
-    color: $m-color_6;
-    border: solid 1px $m-color_6;
+    color: $dark;
+    border: solid 1px $dark;
     font-weight: 600;
     border-radius: 6px;
     -webkit-transition: background 0.3s;
@@ -98,9 +98,9 @@
   }
 
   .pricing__item:hover .pricing__action {
-    color: $m-color_3;
-    background: $m-color_14;
-    border: solid 1px $m-color_14;
+    color: $primary;
+    background: $l-primary;
+    border: solid 1px $primary;
     box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
     will-change: opacity, transform;
     transition: all 0.3s ease-out;

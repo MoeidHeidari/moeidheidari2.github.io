@@ -1,12 +1,12 @@
 /*
-    ====================
+    ===========================
         Visitors by Browser
-    ====================
+    ===========================
 */
 
 .widget-four {
   position: relative;
-  background: $m-color_10;
+  background: $white;
   padding: 20px;
   border-radius: 8px;
   height: 100%;
@@ -17,7 +17,8 @@
     h5 {
       font-size: 17px;
       display: block;
-      color: $m-color_3;
+      color: $m-color_10;
+      font-weight: 600;
       margin-bottom: 0;
     }
   }
@@ -35,7 +36,7 @@
 
     .w-icon {
       display: inline-block;
-      padding: 9px 8px;
+      padding: 8px 8px;
       border-radius: 50%;
       display: inline-flex;
       align-self: center;
@@ -52,27 +53,27 @@
 
     .browser-list {
       &:nth-child(1) .w-icon {
-        background: $primary;
+        background: $l-primary;
       }
 
       &:nth-child(2) .w-icon {
-        background: $danger;
+        background: $l-danger;
       }
 
       &:nth-child(3) .w-icon {
-        background: $warning;
+        background: $l-warning;
       }
 
       &:nth-child(1) .w-icon svg {
-        color: $l-primary;
+        color: $primary;
       }
 
       &:nth-child(2) .w-icon svg {
-        color: $l-danger;
+        color: $danger;
       }
 
       &:nth-child(3) .w-icon svg {
-        color: $l-warning;
+        color: $warning;
       }
     }
 
@@ -106,7 +107,7 @@
       height: 22px;
       padding: 4px;
       border-radius: 20px;
-      box-shadow: none;
+      box-shadow: 0 2px 2px rgba(224, 230, 237, 0.4588235294), 1px 6px 7px rgba(224, 230, 237, 0.4588235294);
 
       .progress-bar {
         position: relative;
@@ -115,11 +116,11 @@
           content: '';
           height: 7px;
           width: 7px;
-          background: $m-color_10;
+          background: $white;
           position: absolute;
           right: 3px;
           border-radius: 50%;
-          top: 3.49px;
+          top: 3.4px;
         }
       }
     }

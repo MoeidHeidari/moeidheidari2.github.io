@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $m-color_6;
+    background-color: $m-color_2;
     -webkit-transition: .4s;
     transition: .4s;
 
@@ -95,12 +95,12 @@
   }
 
   input:checked + .slider:before {
-    background-color: $m-color_20;
+    background-color: $white;
   }
 
   &.s-default input {
     &:checked + .slider {
-      background-color: $m-color_6;
+      background-color: $m-color_5;
     }
 
     &:focus + .slider {
@@ -180,7 +180,7 @@
 
   &.s-outline {
     .slider {
-      border: 2px solid $m-color_6;
+      border: 2px solid $m-color_2;
       background-color: transparent;
       width: 36px;
       height: 19px;
@@ -194,8 +194,8 @@
     &[class*="s-outline-"] .slider:before {
       bottom: 1px;
       left: 1px;
-      border: 2px solid $m-color_6;
-      background-color: $m-color_6;
+      border: 2px solid $m-color_4;
+      background-color: $m-color_4;
       color: $m-color_2;
       box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.25);
     }
@@ -237,11 +237,11 @@
 
   &.s-outline-default input {
     &:checked + .slider {
-      border: 2px solid $m-color_6;
+      border: 2px solid $m-color_2;
 
       &:before {
-        border: 2px solid $m-color_6;
-        background-color: $m-color_6;
+        border: 2px solid $m-color_5;
+        background-color: $m-color_5;
         box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.25);
       }
     }

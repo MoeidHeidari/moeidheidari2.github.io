@@ -4,6 +4,7 @@
 
 @import '../../../base/base';    // Base Variables
 
+
 /* Common styles */
 .pricing {
   display: -webkit-flex;
@@ -37,10 +38,12 @@
   }
 }
 
+
 //  ===============================
 //       _pricing-table Imports 
 //  ===============================
 
 @import '_pricing-table/_pricing-table-toggle';
 @import '_pricing-table/_pricing-table-animated';
+@import '_pricing-table/_pricing-table-basic';
 @import '_pricing-table/_pricing-table-basic';

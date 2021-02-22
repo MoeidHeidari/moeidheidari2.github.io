@@ -7,6 +7,7 @@
 .main-container, #content {
   min-height: auto;
 }
+
 /*
     App Note Container
 */
@@ -36,7 +37,7 @@
 .group-section {
   font-weight: 600;
   font-size: 15px;
-  color: $m-color_4;
+  color: $dark;
   letter-spacing: 1px;
   margin-top: 25px;
   margin-bottom: 13px;
@@ -81,7 +82,7 @@
   }
 
   hr {
-    border-top: 1px solid $m-color_6;
+    border-top: 1px solid $m-color_10;
     max-width: 54px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -89,8 +90,8 @@
 
   .nav-pills {
     .nav-link.active, .show > .nav-link {
-      background-color: $m-color_18;
-      color: $m-color_6;
+      background-color: $m-color_4;
+      color: $dark;
       font-weight: 700;
     }
 
@@ -128,7 +129,7 @@
       font-size: 14px;
       font-weight: 700;
       padding: 9px 15px 9px 50px;
-      color: $m-color_6;
+      color: $dark;
       letter-spacing: 1px;
 
       &[class*="g-dot-"]:before {
@@ -141,24 +142,24 @@
         border: 2px solid $m-color_9;
       }
 
+      &.g-dot-danger:before {
+        background: $l-danger;
+        border: 1px solid $danger;
+      }
+
       &.g-dot-primary:before {
-        background: rgba(0, 150, 136, 0.53);
-        border: 2px solid $m-color_14;
+        background: $l-info;
+        border: 1px solid $info;
       }
 
       &.g-dot-warning:before {
-        background: rgba(226, 160, 63, 0.53);
-        border: 2px solid $warning;
+        background: $l-warning;
+        border: 1px solid $warning;
       }
 
       &.g-dot-success:before {
-        background: rgba(92, 26, 195, 0.53);
-        border: 2px solid $secondary;
-      }
-
-      &.g-dot-danger:before {
-        background: rgba(231, 81, 90, 0.53);
-        border: 2px solid $danger;
+        background: $l-secondary;
+        border: 1px solid $secondary;
       }
     }
 
@@ -235,22 +236,22 @@
     max-width: 300px;
     border-radius: 6px;
     display: inline-flex;
-    background: rgba(85, 85, 85, 0.3333333333);
+    background: $m-color_3;
 
     &.note-personal {
-      background: rgba(0, 150, 136, 0.28);
+      background: $l-info;
     }
 
     &.note-work {
-      background: rgba(226, 160, 63, 0.42);
+      background: $l-warning;
     }
 
     &.note-important {
-      background: rgba(231, 80, 90, 0.38);
+      background: $l-danger;
     }
 
     &.note-social {
-      background: rgba(92, 26, 195, 0.26);
+      background: $l-secondary;
     }
 
     .note-inner-content {
@@ -261,7 +262,7 @@
       .note-title {
         font-size: 19px;
         font-weight: 600;
-        color: $m-color_5;
+        color: $dark;
         margin-bottom: 11px;
         letter-spacing: 0px;
       }
@@ -270,7 +271,7 @@
         font-weight: 600;
         margin-bottom: 10px;
         font-size: 14px;
-        color: $m-color_5;
+        color: $m-color_9;
         display: inline-block;
         border-radius: 4px;
       }
@@ -281,7 +282,6 @@
         margin-bottom: 18px;
         letter-spacing: 0px;
         word-wrap: break-word;
-        color: $m-color_5;
       }
 
       .note-action {
@@ -291,7 +291,7 @@
           padding: 4px;
           border-radius: 5px;
           cursor: pointer;
-          color: $l-primary;
+          color: $m-color_9;
           width: 28px;
           height: 28px;
           fill: rgba(0, 23, 55, 0.08);
@@ -300,17 +300,17 @@
     }
 
     &.note-fav .note-inner-content .note-action .fav-note {
-      fill: $m-color_4;
+      fill: $warning;
     }
 
     .note-inner-content {
       .note-action {
         .fav-note:hover {
-          fill: $m-color_11;
+          fill: $warning;
         }
 
         .delete-note:hover {
-          color: $m-color_15;
+          color: $danger;
         }
       }
 
@@ -330,29 +330,29 @@
             border-radius: 50%;
             border: 2px solid $l-dark;
             display: inline-block;
-            height: 12px;
-            width: 12px;
+            height: 11px;
+            width: 11px;
             vertical-align: middle;
             display: none;
           }
 
           .g-dot-personal {
-            background: rgba(0, 150, 136, 0.53);
-            border: 2px solid $m-color_14;
+            background: $l-info;
+            border: 2px solid $info;
           }
 
           .g-dot-work {
-            background: rgba(226, 160, 63, 0.53);
+            background: $l-warning;
             border: 2px solid $warning;
           }
 
           .g-dot-social {
-            background: rgba(92, 26, 195, 0.53);
+            background: $l-secondary;
             border: 2px solid $secondary;
           }
 
           .g-dot-important {
-            background: rgba(231, 81, 90, 0.53);
+            background: $l-danger;
             border: 2px solid $danger;
           }
         }
@@ -373,8 +373,9 @@
           a {
             font-size: 14px;
             padding: 3px 35px;
+            font-weight: 600;
             letter-spacing: 0px;
-            color: $m-color_4;
+            color: $dark;
           }
 
           .dropdown-item {
@@ -388,30 +389,30 @@
             position: absolute;
             padding: 4px;
             border-radius: 50%;
-            top: 7px;
+            top: 9px;
             left: 10px;
             border: 2px solid $m-color_9;
           }
 
           a {
+            &.g-dot-important:before {
+              background: $l-danger;
+              border: 1px solid $danger;
+            }
+
             &.g-dot-personal:before {
-              background: rgba(0, 150, 136, 0.53);
-              border: 2px solid $m-color_14;
+              background: $l-info;
+              border: 1px solid $info;
             }
 
             &.g-dot-work:before {
-              background: rgba(226, 160, 63, 0.53);
-              border: 2px solid $warning;
+              background: $l-warning;
+              border: 1px solid $warning;
             }
 
             &.g-dot-social:before {
-              background: rgba(92, 26, 195, 0.53);
-              border: 2px solid $secondary;
-            }
-
-            &.g-dot-important:before {
-              background: rgba(231, 81, 90, 0.53);
-              border: 2px solid $danger;
+              background: $l-secondary;
+              border: 1px solid $secondary;
             }
           }
         }
@@ -427,12 +428,12 @@
         .feather-more-vertical {
           border-radius: 5px;
           cursor: pointer;
-          color: $m-color_4;
+          color: $m-color_9;
           width: 20px;
           height: 20px;
 
           &:hover {
-            color: $l-dark;
+            color: $m-color_10;
           }
         }
       }
@@ -454,17 +455,20 @@
 =====================
 */
 
+.new-control.new-radio .new-control-indicator {}
+
 .modal-content {
   border: none;
+  box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
 
   .modal-footer {
     border-top: none;
 
     [data-dismiss="modal"] {
-      background-color: $m-color_12;
-      color: $m-color_4;
+      background-color: $white;
+      color: $primary;
       font-weight: 700;
-      border: 1px solid $m-color_12;
+      border: 1px solid #e8e8e8;
       padding: 10px 25px;
     }
 
@@ -490,7 +494,7 @@
 }
 
 .modal-backdrop {
-  background-color: $m-color_9;
+  background-color: $m-color_2;
 }
 
 .modal-content svg.close {
@@ -500,13 +504,13 @@
   font-size: 12px;
   font-weight: 600;
   padding: 3px;
-  background: $m-color_12;
+  background: $white;
   border-radius: 5px;
   opacity: 1;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: .600s;
-  color: $m-color_14;
+  color: $dark;
 }
 
 .notes-box .notes-content form {
@@ -569,7 +573,7 @@
     border-radius: 0;
     border-bottom-right-radius: 6px;
     padding: 11px;
-    background: $m-color_10;
+    background: $white;
   }
 
   .note-sidebar-scroll {

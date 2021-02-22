@@ -6,10 +6,13 @@
 
 .widget-three {
   position: relative;
-  background: $m-color_10;
+  background: $white;
   padding: 20px;
   border-radius: 8px;
   height: 100%;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
 
   .widget-heading {
     margin-bottom: 54px;
@@ -17,7 +20,7 @@
     h5 {
       font-size: 19px;
       display: block;
-      color: $m-color_3;
+      color: $m-color_10;
       font-weight: 600;
       margin-bottom: 0;
     }
@@ -53,27 +56,27 @@
 
     .summary-list {
       &:nth-child(1) .w-icon {
-        background: $secondary;
+        background: $l-secondary;
       }
 
       &:nth-child(2) .w-icon {
-        background: $m-color_14;
+        background: $l-success;
       }
 
       &:nth-child(3) .w-icon {
-        background: $warning;
+        background: $l-warning;
       }
 
       &:nth-child(1) .w-icon svg {
-        color: $l-secondary;
+        color: $secondary;
       }
 
       &:nth-child(2) .w-icon svg {
-        color: $l-success;
+        color: $m-color_14;
       }
 
       &:nth-child(3) .w-icon svg {
-        color: $l-warning;
+        color: $warning;
       }
     }
 
@@ -106,7 +109,7 @@
       margin-bottom: 0;
       height: 6px;
       border-radius: 20px;
-      box-shadow: none;
+      box-shadow: 0 2px 2px rgba(224, 230, 237, 0.4588235294), 1px 6px 7px rgba(224, 230, 237, 0.4588235294);
     }
   }
 }

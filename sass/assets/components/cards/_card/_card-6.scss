@@ -1,12 +1,15 @@
 /*
-  Component Card 6
+	Component Card 6
 */
 
 .component-card_6 {
   border-radius: 8px;
-  border: 1px solid $m-color_12;
+  background: $white;
+  border: 1px solid $m-color_3;
   width: 19rem;
   margin: 0 auto;
+  -webkit-box-shadow: 4px 6px 10px -3px $m-color_4;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .card-body {
     padding: 30px 30px;
@@ -29,7 +32,7 @@
 
     h5.card-user_name {
       font-size: 16px;
-      color: $m-color_4;
+      color: $dark;
       letter-spacing: 1px;
       font-weight: 700;
       margin-bottom: 3px;
@@ -43,7 +46,7 @@
     }
 
     .card-text {
-      color: $m-color_6;
+      color: $m-color_9;
       font-style: italic;
       font-size: 14px;
       letter-spacing: 1px;

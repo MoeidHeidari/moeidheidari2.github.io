@@ -4,6 +4,7 @@
 
 @import '../../base/base';    // Base Variables
 
+
 /*
 ==================
     Switches
@@ -108,7 +109,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: $m-color_9;
+    background-color: $m-color_3;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
@@ -116,7 +117,7 @@
   }
 
   cursor: pointer;
-  color: $m-color_6;
+  color: $dark;
   margin-bottom: 0;
 
   > input:checked ~ span.new-control-indicator {
@@ -164,21 +165,14 @@
 }
 
 .list-group-item {
-  border: 1px solid $m-color_18;
+  border: 1px solid $m-color_3;
   padding: 10px 12px;
-  background-color: $m-color_12;
-  color: $m-color_6;
 
   &.active {
     color: $white;
-    background-color: $m-color_18;
+    background-color: $m-color_6;
     border-color: transparent;
     box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.15);
-  }
-
-  &.disabled, &:disabled {
-    background: $m-color_7;
-    color: $m-color_6;
   }
 }
 
@@ -195,8 +189,8 @@ code {
 }
 
 .list-group-item-action:hover {
-  color: $m-color_3;
-  background-color: $dark;
+  color: $dark;
+  background-color: $m-color_1;
   box-shadow: 0px 0px 12px 1px rgba(113, 106, 202, 0.08);
 }
 
@@ -209,8 +203,7 @@ code {
 .list-group {
   &.list-group-icons-meta .list-group-item {
     &.active {
-      color: $white;
-      background-color: $m-color_18;
+      background-color: $m-color_6;
 
       .media {
         svg {
@@ -230,13 +223,13 @@ code {
     .media {
       svg {
         width: 20px;
-        color: $m-color_13;
+        color: $primary;
         height: 20px;
       }
 
       .media-body {
         h6 {
-          color: $m-color_6;
+          color: $dark;
           font-weight: 700;
           margin-bottom: 0;
           font-size: 15px;
@@ -244,7 +237,7 @@ code {
         }
 
         p {
-          color: $m-color_6;
+          color: $dark;
           margin-bottom: 0;
           font-size: 12px;
           font-weight: 600;
@@ -255,7 +248,7 @@ code {
 
   &.list-group-media .list-group-item {
     &.active {
-      background-color: $m-color_18;
+      background-color: $m-color_6;
 
       .media .media-body {
         h6, p {
@@ -276,7 +269,7 @@ code {
         align-self: center;
 
         h6 {
-          color: $m-color_6;
+          color: $dark;
           font-weight: 700;
           margin-bottom: 0;
           font-size: 16px;
@@ -284,7 +277,7 @@ code {
         }
 
         p {
-          color: $m-color_6;
+          color: $dark;
           margin-bottom: 0;
           font-size: 12px;
           font-weight: 600;
@@ -294,7 +287,7 @@ code {
   }
 
   &.task-list-group .list-group-item-action.active {
-    background-color: $m-color_18;
+    background-color: $m-color_6;
     color: $white;
 
     .new-control.new-checkbox {

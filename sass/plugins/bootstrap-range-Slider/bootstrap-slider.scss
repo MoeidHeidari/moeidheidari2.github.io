@@ -20,15 +20,11 @@
 
   .range-count-number {
     display: inline-block;
-    background: $m-color_12;
+    background: #ffffff;
     padding: 3px 8px;
     border-radius: 5px;
-    color: $m-color_14;
-    border: 1px solid $m-color_12;
-  }
-
-  .range-count-unit {
-    color: $m-color_14;
+    color: $primary;
+    border: 1px solid $m-color_3;
   }
 }
 
@@ -42,11 +38,8 @@
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    background: $m-color_14;
+    background: $primary;
     cursor: pointer;
-    height: 16px;
-    width: 16px;
-    margin-top: -4px;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
   }
@@ -54,28 +47,15 @@
   &:active::-webkit-slider-thumb {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    box-shadow: none;
   }
 
   &:focus::-webkit-slider-thumb {
-    background: $m-color_14;
-    cursor: pointer;
-    height: 16px;
-    width: 16px;
-    margin-top: -4px;
     box-shadow: none;
   }
 
   &::-moz-range-thumb {
-    background: $m-color_14;
+    background: $primary;
     cursor: pointer;
-    height: 16px;
-    width: 16px;
-    margin-top: -4px;
-  }
-}
-
-input[type=range] {
-  &::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track {
-    background: $m-color_18;
   }
 }

@@ -201,8 +201,8 @@ $(document).ready(function() {
             },
             {
                 id: 'event-9',
-                title: 'Click for Designreset (Cork Admin)',
-                url: 'http://designreset.com/cork-admin',
+                title: 'Click for Designreset',
+                url: 'http://designreset.com/',
                 start: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-27T20:00:00',
                 end: newDate.getFullYear() + '-'+ getDynamicMonth('default') +'-28T20:00:00',
                 className: "bg-success",

@@ -1,5 +1,5 @@
 /*
-  Component Card 3
+	Component Card 3
 */
 
 .component-card_3 {
@@ -8,6 +8,7 @@
   background: $dark;
   width: 18rem;
   margin: 0 auto;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .card-body {
     padding: 22px 20px;

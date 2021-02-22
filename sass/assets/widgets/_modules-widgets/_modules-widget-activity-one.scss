@@ -13,7 +13,6 @@
     height: auto;
     box-shadow: none;
     color: $l-dark;
-    background: transparent;
     font-weight: 600;
     letter-spacing: 2px;
     margin: 0 0 0 auto;
@@ -45,8 +44,8 @@
       top: 10px;
       left: 50%;
       transform: translateX(-50%);
-      border-color: $m-color_6;
-      background: $m-color_9;
+      border-color: $m-color_3;
+      background: $m-color_4;
     }
 
     &:after {
@@ -103,7 +102,12 @@
       color: $m-color_4;
       font-weight: 600;
 
-      span, a {
+      span {
+        color: $m-color_9;
+        font-weight: 600;
+      }
+
+      a {
         color: $m-color_6;
         font-weight: 600;
       }
@@ -130,7 +134,7 @@
     background: transparent;
     box-shadow: none;
     padding: 0;
-    color: $m-color_5;
+    color: $primary;
     font-weight: 700;
     letter-spacing: 1px;
     border: none;

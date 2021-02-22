@@ -4,13 +4,16 @@
 
 @import '../../base/base';    // Base Variables
 
+.main-container {
+    min-height: auto;
+}
+.layout-px-spacing {
+    min-height: auto!important;
+}
+
 .ps--active-y > .ps__rail-y {
   z-index: 20;
 }
-.modal-backdrop {
-  background-color: $m-color_9;
-}
-
 #content > .container {
   max-width: 100% !important;
 }
@@ -26,14 +29,13 @@
 .popover {
   border: none;
   border-radius: 5px;
+  border-color: $l-primary;
   max-width: 338px;
   min-width: 270px;
-  background: $m-color_19;
+  background: $white;
   box-shadow: none;
-  border: 1px solid $m-color_19;
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid $m-color_3;
+  box-shadow: 0px 3px 11px 0px rgba(31, 45, 61, 0.1);
 }
 
 .popover-primary {
@@ -45,9 +47,9 @@
   }
 
   .popover-header {
-    background-color: $m-color_19;
-    border-color: $m-color_19;
-    color: $m-color_4;
+    background-color: $m-color_9;
+    border-color: $l-primary;
+    color: $white;
     padding: 11px 18px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -57,7 +59,7 @@
   }
 
   .popover-body {
-    color: $m-color_4;
+    color: $dark;
     min-height: 90px;
     font-size: 13px;
     letter-spacing: 1px;
@@ -82,7 +84,7 @@
   position: relative;
   padding: 0 17px;
   font-size: 14px;
-  color: $m-color_4;
+  color: $dark;
   cursor: pointer;
 
   &:before {
@@ -114,10 +116,6 @@
   }
 }
 
-.new-control.new-radio > input:not(:checked) ~ span.new-control-indicator {
-  background-color: transparent !important;
-}
-
 .radio-primary span.new-control-indicator {
   border: 2px solid $primary;
 }
@@ -142,7 +140,6 @@ button {
   &.fc-month-button, &.fc-agendaWeek-button, &.fc-agendaDay-button {
     padding: 6px 10px;
     letter-spacing: 1px;
-    color: $m-color_3;
   }
 
   &.fc-prev-button, &.fc-next-button {
@@ -150,40 +147,39 @@ button {
   }
 
   &.fc-today-button {
-    border: 1px solid $m-color_12;
+    border: 1px solid $m-color_3;
     border-radius: 6px !important;
     padding: 6px 10px;
-    color: $white;
   }
 }
 
 .bg-primary {
-  background-color: rgba(27, 85, 226, 0.27) !important;
-  border-color: $primary !important;
+  background-color: $l-primary !important;
+  border-color: $l-primary !important;
   color: $white;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
 .bg-success {
-  background-color: rgba(0, 150, 136, 0.28) !important;
-  border-color: rgba(0, 150, 136, 0.28) !important;
+  background-color: $l-success !important;
+  border-color: $l-success !important;
   color: $white;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
 .bg-warning {
-  background-color: rgba(226, 160, 63, 0.42) !important;
-  border-color: rgba(226, 160, 63, 0.42) !important;
+  background-color: $l-warning !important;
+  border-color: $l-warning !important;
   color: $white;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
 .bg-danger {
-  background-color: rgba(231, 80, 90, 0.38) !important;
-  border-color: rgba(231, 80, 90, 0.38) !important;
+  background-color: $l-danger !important;
+  border-color: $l-danger !important;
   color: $white;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -192,6 +188,7 @@ button {
 a {
   &.bg-primary:hover, &.bg-success:hover, &.bg-warning:hover, &.bg-danger:hover {
     background-color: inherit !important;
+    border-width: 2px !important;
   }
 }
 
@@ -226,8 +223,6 @@ a {
 
     .close {
       cursor: pointer;
-      color: $m-color_4;
-      text-shadow: none;
     }
   }
 
@@ -235,49 +230,39 @@ a {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0px;
-    color: $m-color_4;
+    color: $dark;
   }
 
   form {
     margin-top: 30px;
 
-    input[readonly] {
-      background: $m-color_12 !important;
-    }
-  }
-}
-
-.flatpickr-calendar.arrowTop:before {
-  border-bottom-color: $m-color_10 !important;
-}
-
-#addEventsModal form {
-  label {
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: 600;
-    color: $l-dark;
-  }
-
-  .event-badge {
-    margin-top: 16px;
-
-    p {
-      margin-bottom: 10px;
+    label {
+      margin-bottom: 5px;
       font-size: 14px;
       font-weight: 600;
       color: $l-dark;
     }
-  }
 
-  label {}
+    .event-badge {
+      margin-top: 16px;
 
-  input {
-    margin-bottom: 25px;
-  }
+      p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $l-dark;
+      }
+    }
 
-  .form-group {
-    margin-bottom: 0;
+    label {}
+
+    input {
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -315,15 +300,15 @@ input[readonly] {
     background-color: $m-color_14;
     color: $white;
     font-weight: 600;
-    border: 1px solid $m-color_14;
+    border: 1px solid $m-color_3;
     padding: 10px 25px;
   }
 
   [data-dismiss="modal"] {
-    background-color: $m-color_12;
-    color: $m-color_4;
-    font-weight: 500;
-    border: 1px solid $m-color_12;
+    background-color: $white;
+    color: $primary;
+    font-weight: 700;
+    border: 1px solid #e8e8e8;
     padding: 10px 25px;
   }
 }

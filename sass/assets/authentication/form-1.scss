@@ -4,6 +4,7 @@
 
 @import '../../base/base';    // Base Variables
 
+
 html {
   height: 100%;
 }
@@ -13,7 +14,7 @@ body {
   overflow: auto;
   margin: 0;
   padding: 0;
-  background: $m-color_19;
+  background: $white;
 }
 
 .form-container {
@@ -44,10 +45,6 @@ body {
     width: 100%;
     min-height: 100%;
 
-    h1 {
-      color: $m-color_4;
-    }
-
     .form-content {
       display: block;
       width: 100%;
@@ -63,7 +60,7 @@ body {
         height: 52px;
         border-radius: 50%;
         margin-right: 15px;
-        border: 4px solid rgba(59, 63, 92, 0.25);
+        border: 4px solid $m-color_3;
       }
 
       div {
@@ -72,25 +69,25 @@ body {
 
       p {
         font-size: 31px;
-        color: $m-color_4;
+        color: $dark;
         margin-bottom: 0;
       }
     }
 
     h1 .brand-name {
-      color: $m-color_14;
+      color: $primary;
       font-weight: 600;
     }
 
     p.signup-link {
       font-size: 14px;
-      color: $m-color_3;
+      color: $dark;
+      font-weight: 700;
       margin-bottom: 50px;
 
       a {
-        color: $m-color_14;
+        color: $primary;
         border-bottom: 1px solid;
-        font-weight: 600;
       }
     }
 
@@ -107,20 +104,20 @@ body {
 
       &.toggle-pass p {
         font-weight: 600;
-        color: $m-color_4;
+        color: $dark;
         margin-bottom: 0;
       }
 
       .logged-in-user-name {
         font-size: 37px;
-        color: $m-color_4;
+        color: $dark;
       }
 
       svg {
         position: absolute;
-        top: 13px;
-        color: $m-color_14;
-        fill: rgba(33, 150, 243, 0.1098039216);
+        top: 16px;
+        color: $primary;
+        fill: rgba(27, 85, 226, 0.2392156863);
       }
 
       &.terms_condition {
@@ -134,8 +131,7 @@ body {
         }
 
         a {
-          color: $m-color_14;
-          font-weight: 600;
+          color: $primary;
         }
       }
 
@@ -147,13 +143,14 @@ body {
         max-width: 635px;
         width: 100%;
         min-height: 36px;
-        background-color: transparent;
+        background-color: #ffffff;
         border: none;
         -ms-transition: all 0.2s ease-in-out 0s;
         transition: all 0.2s ease-in-out 0s;
-        color: $m-color_14;
+        color: $dark;
+        font-weight: 700;
         font-size: 16px;
-        border-bottom: 1px solid $m-color_18;
+        border-bottom: 1px solid $m-color_3;
         padding: 0px 0 10px 35px;
 
         &::-webkit-input-placeholder, &::-ms-input-placeholder, &::-moz-placeholder {
@@ -162,7 +159,7 @@ body {
         }
 
         &:focus {
-          border-bottom: 1px solid $m-color_14;
+          border-bottom: 1px solid $primary;
           box-shadow: none;
         }
       }
@@ -184,19 +181,19 @@ body {
 
       a.forgot-pass-link {
         width: 100%;
-        color: $m-color_14;
+        font-weight: 700;
+        color: $primary;
         text-align: center;
         display: block;
         letter-spacing: 2px;
         font-size: 15px;
         margin-top: 15px;
-        font-weight: 600;
       }
 
       .n-chk .new-control-indicator {
         top: 1px;
-        border: 1px solid $m-color_9;
-        background-color: $m-color_9;
+        border: 1px solid $m-color_4;
+        background-color: $m-color_1;
 
         &:after {
           top: 52%;
@@ -219,13 +216,13 @@ body {
   .terms-conditions {
     max-width: 480px;
     margin: 0 auto;
-    color: $m-color_6;
+    color: $dark;
     font-weight: 600;
     margin-top: 90px;
 
     a {
-      color: $m-color_14;
-      font-weight: 600;
+      color: $primary;
+      font-weight: 700;
     }
   }
 }

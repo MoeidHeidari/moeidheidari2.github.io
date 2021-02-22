@@ -13,13 +13,13 @@
     -moz-transition-delay: 0s;
     transition-delay: 0s;
     position: relative;
-    background: $m-color_12;
-    border: 1px solid $m-color_9;
+    background: $white;
+    border: 1px solid $m-color_4;
 
     .card-header, .card-footer {
       padding: 30px;
-      background: $m-color_12;
-      border-bottom: 1px solid $m-color_9;
+      background: $white;
+      border-bottom: 1px solid $m-color_4;
       color: $dark;
     }
 
@@ -30,7 +30,7 @@
       -webkit-transition-delay: 0s;
       -moz-transition-delay: 0s;
       transition-delay: 0s;
-      color: $m-color_3;
+      color: $dark;
       display: block;
       width: 6.25rem;
       height: 6.25rem;
@@ -39,13 +39,13 @@
       text-align: center;
       line-height: 6.25rem;
       font-size: 1.875rem;
-      -webkit-box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
-      -moz-box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
-      box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
+      box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
       border-radius: 0.25rem;
-      border: 1px solid $m-color_9;
-      background: $m-color_18;
-      font-weight: 500;
+      border: 2px solid $primary;
+      background: $white;
+      font-weight: 700;
     }
 
     &:hover .card-price {
@@ -57,7 +57,7 @@
     .card-header p {
       font-weight: 600;
       font-size: 15px;
-      color: $m-color_6;
+      color: $dark;
     }
 
     .card-body {
@@ -68,13 +68,11 @@
         border: 0;
         font-weight: 600;
         font-size: 14px;
-        color: $m-color_4;
+        color: $dark;
       }
 
       a {
         padding: 15px 10px;
-        background-color: $m-color_18 !important;
-        border-color: $m-color_18;
       }
     }
   }

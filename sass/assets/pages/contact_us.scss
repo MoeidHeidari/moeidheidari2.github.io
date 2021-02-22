@@ -5,8 +5,8 @@
 @import '../../base/base';    // Base Variables
 
 body {
-    max-width: 100%;
-    margin: 0;
+  max-width: 100%;
+  margin: 0;
 }
 
 /*      Map     */
@@ -26,7 +26,7 @@ body {
     width: 100%;
     padding: 15px 34px;
     color: $white;
-    background-color: rgba(14, 23, 38, 0.23);
+    background-color: rgba(43, 80, 237, 0.1098039216);
 
     h4 {
       color: $white;
@@ -59,14 +59,14 @@ body {
     z-index: 2;
 
     form {
-      background: $m-color_10;
+      background: $white;
       padding: 25px 35px;
       border-radius: 10px;
       margin-top: 24px;
       margin-bottom: 24px;
-      -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+      -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
 
       .input-fields {
         position: relative;
@@ -74,7 +74,7 @@ body {
         svg {
           position: absolute;
           top: 11px;
-          color: $m-color_14;
+          color: $primary;
           width: 20px;
           left: 25px;
 
@@ -89,7 +89,7 @@ body {
         font-size: 22px;
         font-weight: 600;
         margin-bottom: 25px;
-        color: $m-color_4;
+        color: $dark;
       }
 
       input {
@@ -103,7 +103,7 @@ body {
         }
 
         &:focus {
-          background-color: $m-color_10;
+          background-color: #ffffff;
           border-color: $dark;
         }
       }
@@ -126,7 +126,7 @@ body {
     }
 
     &:focus {
-      background-color: $m-color_10;
+      background-color: #ffffff;
       border-color: $dark;
     }
 
@@ -144,10 +144,6 @@ body {
 }
 
 /* 	Contact Content 	*/
-
-.new-control.new-radio.radio-success > input:checked ~ span.new-control-indicator {
-  background: $m-color_14 !important;
-}
 
 @media (max-width: 991px) {
   .cu-contact-section {

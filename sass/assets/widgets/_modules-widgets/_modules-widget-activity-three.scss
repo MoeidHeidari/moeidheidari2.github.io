@@ -6,21 +6,21 @@
 
 .widget.widget-activity-three {
   position: relative;
-  background: #0e1726;
+  background: #fff;
   border-radius: 8px;
   height: 100%;
 
   .widget-heading {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px dashed #3b3f5c;
+    border-bottom: 1px dashed #e0e6ed;
     padding: 20px 20px;
     padding-bottom: 20px;
 
     h5 {
       font-size: 17px;
       display: block;
-      color: #e0e6ed;
+      color: #0e1726;
       font-weight: 600;
       margin-bottom: 0;
     }
@@ -127,6 +127,21 @@
         font-size: 11px;
         letter-spacing: 1px;
         transform: none;
+      }
+
+      .badge-primary {
+        background-color: #c2d5ff;
+        color: #1b55e2;
+      }
+
+      .badge-success {
+        background-color: #e6ffbf;
+        color: #009688;
+      }
+
+      .badge-warning {
+        background-color: #ffeccb;
+        color: #e2a03f;
       }
     }
   }

@@ -19,7 +19,7 @@
     position: relative;
     font-size: 19px;
     font-weight: 600;
-    color: $m-color_14;
+    color: #1b55e2;
     margin-bottom: 28px;
 
     &:before {
@@ -27,7 +27,7 @@
       content: "";
       height: 2px;
       width: 70px;
-      background: $m-color_14;
+      background: #1b55e2;
       border-radius: 50px;
       bottom: -2px;
       left: 15px;
@@ -39,7 +39,7 @@
       margin-bottom: 24px;
       font-size: 16px;
       font-weight: 600;
-      color: $m-color_6;
+      color: #888ea8;
     }
 
     .timeline-post-content {
@@ -75,7 +75,7 @@
           border-bottom-width: 0;
           border-radius: 0;
           z-index: -1;
-          border-color: $m-color_18;
+          border-color: #ebedf2;
         }
 
         img {
@@ -92,36 +92,39 @@
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 0;
-        color: $m-color_14;
+        color: #1b55e2;
       }
 
+      .meta-time-date {}
+
       svg {
-        color: $m-color_6;
+        color: #888ea8;
         vertical-align: text-bottom;
         width: 21px;
         height: 21px;
       }
 
       &:hover svg {
-        color: $m-color_14;
+        color: #1b55e2;
         fill: rgba(27, 85, 226, 0.2392156863);
       }
+
+      svg.feather-calendar {}
 
       h6 {
         display: inline-block;
         font-size: 17px;
         font-weight: 600;
         margin-bottom: 11px;
-        color: $m-color_5;
       }
 
       &:hover h6 {
-        color: $m-color_6;
+        color: #888ea8;
       }
 
       p.post-text {
         padding-left: 31px;
-        color: $m-color_6;
+        color: #888ea8;
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 28px;

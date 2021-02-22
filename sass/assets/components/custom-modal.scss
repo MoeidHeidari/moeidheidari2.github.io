@@ -11,15 +11,14 @@
 .modal-content {
   border: none;
   border-radius: 6px;
-  background: $m-color_10;
 
   hr {
-    border-top: 1px solid $m-color_18;
+    border-top: 1px solid $m-color_3;
   }
 
   .modal-header {
     padding: 12px 26px;
-    border: 1px solid $m-color_18;
+    border: 1px solid $m-color_3;
 
     h5 {
       font-weight: 700;
@@ -58,7 +57,7 @@
   }
 
   .modal-footer {
-    border-top: 1px solid $m-color_18;
+    border-top: 1px solid $m-color_3;
 
     button.btn {
       font-weight: 600;
@@ -66,10 +65,10 @@
       letter-spacing: 1px;
 
       &[data-dismiss="modal"] {
-        background-color: $m-color_12;
-        color: $m-color_4;
-        font-weight: 500;
-        border: 1px solid $m-color_12;
+        background-color: $white;
+        color: $primary;
+        font-weight: 700;
+        border: 1px solid #e8e8e8;
       }
     }
 
@@ -80,45 +79,6 @@
     }
   }
 }
-
-/*
-    Modal Tabs
-*/
-
-.close {
-  text-shadow: none;
-  color: $l-dark;
-
-  &:hover {
-    color: $l-dark;
-  }
-}
-
-.nav-tabs {
-  svg {
-    width: 20px;
-    vertical-align: bottom;
-  }
-
-  .nav-link {
-    &.active {
-      color: $m-color_16;
-      background-color: $m-color_18;
-      border-color: $m-color_18 $m-color_18 $m-color_10;
-
-      &:after {
-        color: $m-color_16;
-      }
-    }
-
-    &:hover {
-      border-color: $m-color_18 $m-color_18 $m-color_18;
-    }
-  }
-
-  border-bottom: 1px solid $m-color_18;
-}
-
 
 /*
     Modal Success
@@ -183,12 +143,13 @@
   display: inline-block;
   padding: 13px;
   border-radius: 50%;
-  background: $m-color_4;
+  background: $m-color_1;
+  color: $black;
 
   svg {
     width: 36px;
     height: 36px;
-    color: $m-color_12;
+    color: $m-color_6;
     fill: rgba(0, 23, 55, 0.08);
   }
 }
@@ -324,14 +285,14 @@
         width: 20px;
         top: 11px;
         left: 9px;
-        color: $m-color_13;
+        color: $primary;
         fill: rgba(27, 85, 226, 0.2392156863);
       }
 
       input {
         padding-left: 35px;
         border: none;
-        border-bottom: 1px solid $m-color_18;
+        border-bottom: 1px solid $m-color_3;
         border-radius: 0;
 
         &.form-control:focus {
@@ -352,7 +313,7 @@
       a {
         background: transparent;
         box-shadow: none;
-        border: 2px solid $m-color_18;
+        border: 2px solid $m-color_3;
 
         &.social-fb svg {
           color: $primary;

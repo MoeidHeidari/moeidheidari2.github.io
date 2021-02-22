@@ -4,25 +4,23 @@
 
 @import '../../base/base';    // Base Variables
 
-.action-btn {
-  p {
+.action-btn p {
     display: inline-block;
     margin-right: 16px;
     margin-bottom: 0;
     font-size: 14px;
     letter-spacing: 0px;
-    color: #bfc9d4;
-  }
-
-  svg {
+    color: #3b3f5c;
+    font-weight: 700;
+}
+.action-btn svg {
     width: 20px;
     height: 20px;
     vertical-align: bottom;
     margin-right: 3px;
-  }
 }
 .modal-backdrop {
-  background-color: $m-color_9;
+  background-color: $m-color_6;
 
   &.show {
     opacity: .7;
@@ -36,13 +34,14 @@
 
   .modal-content {
     border: none;
+    box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
   }
 
   .compose-box {
     h5 {
       font-weight: 700;
       font-size: 18px;
-      color: $m-color_4;
+      color: $dark;
       text-align: center;
       margin-bottom: 38px;
     }
@@ -54,7 +53,7 @@
         align-self: center;
         font-size: 19px;
         margin-right: 14px;
-        color: $m-color_14;
+        color: $primary;
         font-weight: 600;
       }
 
@@ -78,10 +77,10 @@
     padding: 23px 20px;
 
     .btn[data-dismiss="modal"] {
-      background-color: $m-color_12;
-      color: $m-color_4;
+      background-color: $white;
+      color: $primary;
       font-weight: 700;
-      border: 1px solid $m-color_12;
+      border: 1px solid $m-color_3;
       padding: 10px 25px;
     }
 
@@ -89,7 +88,7 @@
       background-color: $m-color_14;
       color: $white;
       font-weight: 600;
-      border: 1px solid $m-color_14;
+      border: 1px solid $m-color_3;
       padding: 10px 25px;
     }
 
@@ -97,7 +96,7 @@
       background-color: $primary;
       color: $white;
       font-weight: 600;
-      border: 1px solid $primary;
+      border: 1px solid $m-color_3;
       padding: 10px 25px;
     }
   }
@@ -109,7 +108,7 @@
   .compose-box h5 {
     font-weight: 700;
     font-size: 18px;
-    color: $m-color_4;
+    color: $m-color_9;
     text-align: center;
     margin-bottom: 38px;
   }
@@ -120,11 +119,11 @@
 
   .modal-content {
     .card {
-      border: 1px solid $m-color_18;
+      border: 1px solid $m-color_3;
       margin-bottom: 26px;
       border-radius: 6px;
       cursor: pointer;
-      background-color: $m-color_18;
+      background-color: $white;
     }
 
     .card-header {
@@ -137,7 +136,7 @@
         padding: 13px 21px;
         font-weight: 600;
         font-size: 16px;
-        color: $m-color_14;
+        color: $primary;
       }
     }
 
@@ -148,7 +147,7 @@
       align-self: center;
       font-size: 19px;
       margin-right: 14px;
-      color: $m-color_4;
+      color: $primary;
       font-weight: 600;
     }
 
@@ -162,7 +161,7 @@
         &::-webkit-slider-thumb {
           -webkit-appearance: none;
           appearance: none;
-          background: $m-color_14;
+          background: $primary;
           cursor: pointer;
           -webkit-transition: all 0.35s ease;
           transition: all 0.35s ease;
@@ -185,19 +184,9 @@
       margin-left: 6px;
       font-size: 16px;
       font-weight: 700;
-      color: $m-color_14;
+      color: $dark;
     }
-  }
-}
 
-input[type=range] {
-  &::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track {
-    background: $m-color_10;
-  }
-}
-
-#addTaskModal {
-  .modal-content {
     .img-preview {
       text-align: center;
 
@@ -225,7 +214,6 @@ input[type=range] {
       border: none;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
-      background-color: $dark;
     }
   }
 
@@ -243,10 +231,10 @@ input[type=range] {
     padding-top: 0;
 
     .btn[data-dismiss="modal"] {
-      background-color: $m-color_12;
-      color: $m-color_4;
+      background-color: $white;
+      color: $primary;
       font-weight: 700;
-      border: 1px solid $m-color_12;
+      border: 1px solid #e8e8e8;
       padding: 10px 25px;
     }
 
@@ -262,7 +250,7 @@ input[type=range] {
       background-color: $m-color_14;
       color: $white;
       font-weight: 600;
-      border: 1px solid $m-color_14;
+      border: 1px solid $m-color_3;
       padding: 10px 25px;
     }
   }
@@ -338,6 +326,7 @@ input[type=range] {
   overflow-x: auto;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  padding-bottom: 15px;
 }
 
 .task-list-container {
@@ -360,11 +349,11 @@ input[type=range] {
 
 .connect-sorting {
   padding: 15px;
-  background: $m-color_10;
+  background: $m-color_3;
   border-radius: 10px;
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
 
   .task-container-header {
     display: flex;
@@ -380,7 +369,7 @@ input[type=range] {
         font-weight: 700;
 
         &:hover {
-          color: $m-color_14;
+          color: $primary;
         }
 
         &.active, &:active {
@@ -392,7 +381,6 @@ input[type=range] {
     h6 {
       font-size: 16px;
       font-weight: 700;
-      color: $m-color_4;
     }
   }
 
@@ -408,13 +396,13 @@ input[type=range] {
 
     .addTask {
       display: block;
-      color: $m-color_4;
+      color: #ffffff;
       font-size: 14px;
       font-weight: 600;
       text-align: center;
       padding: 13px 11px;
       border-radius: 4px;
-      background: $m-color_9;
+      background: $primary;
 
       &:hover {
         color: $white;
@@ -437,9 +425,8 @@ input[type=range] {
 
     h4 {
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 0;
-      color: $m-color_4;
     }
 
     svg {
@@ -454,8 +441,8 @@ input[type=range] {
         margin-right: 5px;
 
         &:hover {
-          color: $m-color_14;
-          fill: rgba(0, 150, 136, 0.41);
+          color: $primary;
+          fill: rgba(27, 85, 226, 0.2392156863);
         }
       }
 
@@ -476,12 +463,11 @@ input[type=range] {
   }
 
   .card {
-    background: $m-color_18;
     border: none;
     border-radius: 4px;
     margin-bottom: 30px;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
+    box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
 
     .card-body {
       padding: 0;
@@ -500,11 +486,11 @@ input[type=range] {
               height: 17px;
 
               &:hover {
-                color: $m-color_14;
+                color: $primary;
                 cursor: pointer;
 
                 svg {
-                  color: $m-color_14;
+                  color: $primary;
                   fill: rgba(27, 85, 226, 0.2392156863);
                 }
               }
@@ -540,8 +526,8 @@ input[type=range] {
               padding: 0;
 
               &:hover {
-                color: $m-color_14;
-                fill: rgba(0, 150, 136, 0.41);
+                color: $primary;
+                fill: rgba(27, 85, 226, 0.2392156863);
               }
             }
 
@@ -566,13 +552,21 @@ input[type=range] {
       }
     }
 
-    &.img-task .card-body .task-content {
-      padding: 10px 10px 0 10px;
+    &.img-task {
+      .card-body, .task-header {}
 
-      img {
-        border-radius: 6px;
-        height: 105px;
-        width: 100%;
+      .card-body {
+        .task-content {
+          padding: 10px 10px 0 10px;
+
+          img {
+            border-radius: 6px;
+            height: 105px;
+            width: 100%;
+          }
+        }
+
+        .task-body .task-bottom {}
       }
     }
 
@@ -601,26 +595,21 @@ input[type=range] {
     &.task-text-progress .card-body .task-content {
       p {
         padding: 5px 20px 5px 20px;
-        color: $m-color_4;
-      }
-
-      .progress {
-        .progress-bar {
-          background-color: $m-color_14 !important;
-          border-color: $m-color_14;
-        }
-
-        height: 9px;
-        width: 100%;
-        margin-right: 17px;
-        margin-bottom: 0;
-        align-self: center;
-        background: $m-color_10;
       }
 
       > div {
         display: flex;
         padding: 5px 20px 5px 20px;
+      }
+
+      .progress {
+        height: 9px;
+        width: 100%;
+        margin-right: 17px;
+        margin-bottom: 0;
+        align-self: center;
+
+        .progress-bar p {}
       }
 
       > div p.progress-count {
@@ -630,8 +619,7 @@ input[type=range] {
     }
 
     &.ui-sortable-helper {
-      background-color: $m-color_14;
-      background: rgba(0, 150, 136, 0.28);
+      background-color: $primary;
 
       .task-header {
         span {
@@ -706,11 +694,11 @@ input[type=range] {
 
 .ui-state-highlight {
   position: relative;
-  border-color: $m-color_14;
+  border-color: $primary;
   height: 141px;
   margin-bottom: 36px;
   border-radius: 15px;
-  border: 1px dashed $m-color_14;
+  border: 1px dashed $primary;
   background-image: linear-gradient(45deg, rgba(27, 85, 226, 0.09) 25%, transparent 25%, transparent 50%, rgba(27, 85, 226, 0.09) 50%, rgba(27, 85, 226, 0.09) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
   -webkit-animation: progress-bar-stripes 1s linear infinite;
@@ -721,7 +709,7 @@ input[type=range] {
     position: absolute;
     left: 41%;
     font-size: 19px;
-    color: $m-color_14;
+    color: $primary;
     top: 50%;
     margin-top: -16px;
     font-weight: 600;

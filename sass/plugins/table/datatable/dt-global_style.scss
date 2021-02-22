@@ -4,10 +4,11 @@
 
 @import '../../../base/base';    // Base Variables
 
+
 .widget-content-area {
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901960784), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
 }
 
 .no-content {
@@ -24,8 +25,8 @@
 }
 
 .table > thead {
-  border-top: 1px solid $m-color_18;
-  border-bottom: 1px solid $m-color_18;
+  border-top: 1px solid $m-color_3;
+  border-bottom: 1px solid $m-color_3;
 }
 
 table.dataTable {
@@ -75,7 +76,6 @@ table.dataTable {
   margin-top: 8px !important;
   margin-bottom: 50px !important;
   border-collapse: collapse !important;
-  background: transparent;
 }
 
 .table > {
@@ -83,7 +83,7 @@ table.dataTable {
     &:before {
       line-height: 1em;
       content: "_";
-      color: transparent;
+      color: white;
       display: block;
     }
 
@@ -91,13 +91,12 @@ table.dataTable {
       border-radius: 4px;
       -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease;
-      border-bottom: 1px solid $m-color_18;
-      background: transparent !important;
+      border-bottom: 1px solid $m-color_3;
     }
   }
 
   thead > tr > th {
-    color: $m-color_14;
+    color: $primary;
     font-weight: 700;
     font-size: 13px;
     border: none;
@@ -138,9 +137,9 @@ div.dataTables_wrapper div {
   &.dataTables_info {
     padding-top: 0.85em;
     white-space: normal;
-    color: $m-color_14;
+    color: $primary;
     font-weight: 600;
-    border: 1px solid $m-color_18;
+    border: 1px solid $m-color_3;
     display: inline-block;
     padding: 10px 16px;
     border-radius: 6px;
@@ -169,11 +168,8 @@ div.dataTables_wrapper div {
   -webkit-box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
   box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
   border-radius: 6px;
+  border: 1px solid $m-color_3;
   padding: 8px 30px 8px 14px;
-  border: 1px solid $m-color_12;
-  color: $m-color_14;
-  font-size: 15px;
-  background: $m-color_12;
 }
 
 div.dataTables_wrapper div.dataTables_filter input {
@@ -189,10 +185,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 
   /* Safari and Chrome */
   appearance: none;
-  background: $m-color_12 url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23bfc9d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") 49px 12px no-repeat;
-  border: 1px solid $m-color_12;
-  color: $m-color_14;
-  border-radius: 6px;
+  background: #fff url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23d3d3d3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") 50px 9px no-repeat;
 }
 
 div.dataTables_wrapper div.dataTables_paginate {
@@ -221,16 +214,11 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .page-item {
   &.disabled .page-link {
-    background: $m-color_18;
-  }
+    background: $m-color_1;
 
-  .page-link:hover {
-    background: $m-color_18;
-    color: $m-color_4;
-  }
-
-  &.disabled .page-link svg {
-    color: $l-dark;
+    svg {
+      color: $l-dark;
+    }
   }
 
   &:first-child .page-link, &:last-child .page-link {
@@ -243,7 +231,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   }
 
   &.active .page-link {
-    background-color: $m-color_14;
+    background-color: $primary;
   }
 }
 

@@ -18,14 +18,12 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     height: auto;
-    border: 1px solid $m-color_12;
-    color: $m-color_13;
+    border: 1px solid $m-color_1;
+    color: $dark;
     font-size: 15px;
     padding: 8px 10px;
     letter-spacing: 1px;
-    padding: .75rem 1.25rem;
-    border-radius: 6px;
-    background: $m-color_12;
+    background-color: $m-color_1;
   }
 
   .tag {

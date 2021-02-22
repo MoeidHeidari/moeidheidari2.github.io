@@ -4,6 +4,13 @@
 
 @import '../../base/base';    // Base Variables
 
+.main-container {
+    min-height: auto;
+}
+.layout-px-spacing {
+    min-height: auto!important;
+}
+
 @keyframes fadeInUp {
   from {
     transform: translate3d(0, 40px, 0);
@@ -58,9 +65,7 @@
     color: $white;
     font-weight: 700;
     border-radius: 30px;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 15px 1px rgba(113, 106, 202, 0.2);
     padding: 4px 16px;
   }
 }
@@ -68,19 +73,19 @@
 .doc-container {
   position: relative;
   display: flex;
-  background: $m-color_10;
+  background: $white;
   border-radius: 6px;
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
 }
 
 .tab-title {
   min-width: 250px;
 
   .search {
-    border-bottom: 1px solid $m-color_18;
-    border-right: 1px solid $m-color_18;
+    border-bottom: 1px solid $m-color_3;
+    border-right: 1px solid $m-color_3;
 
     input {
       border: none;
@@ -114,12 +119,12 @@
     position: relative;
     margin: auto;
     overflow: auto;
-    border-right: 1px solid $m-color_18;
+    border-right: 1px solid $m-color_3;
     height: calc(100vh - 256px);
   }
 
   .nav-item {
-    border-bottom: 1px solid $m-color_18;
+    border-bottom: 1px solid $m-color_3;
   }
 
   .list-actions {
@@ -129,16 +134,16 @@
     cursor: pointer;
 
     &.active {
-      background-color: $m-color_12;
+      background-color: $white;
       -webkit-transform: translateY(0) scale(1.03);
       transform: translateY(0) scale(1.03);
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 15px 1px $m-color_2;
     }
 
     &:hover {
       -webkit-transform: translateY(0) scale(1.03);
       transform: translateY(0) scale(1.03);
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 15px 1px $m-color_2;
     }
 
     .f-m-body {
@@ -152,7 +157,7 @@
           background: rgba(0, 23, 55, 0.08);
           border-radius: 50%;
           padding: 6px;
-          color: $m-color_6;
+          color: $m-color_10;
           width: 30px;
           height: 30px;
         }
@@ -162,18 +167,18 @@
         .invoice-number {
           margin-bottom: 0;
           font-size: 12px;
-          color: $m-color_4;
+          color: $m-color_6;
           font-weight: 600;
         }
 
         .invoice-customer-name {
           font-size: 14px;
           font-weight: 700;
-          color: $m-color_6;
+          color: $m-color_10;
           margin-bottom: 0;
 
           span {
-            color: $m-color_3;
+            color: $dark;
           }
         }
 
@@ -181,7 +186,7 @@
           margin-bottom: 0;
           font-size: 13px;
           font-weight: 600;
-          color: $m-color_4;
+          color: $dark;
         }
       }
     }
@@ -211,15 +216,14 @@
     p {
       align-self: center;
       font-size: 18px;
-      color: $m-color_3;
+      color: $dark;
       margin-bottom: 0;
       font-weight: 600;
-      background: $m-color_10;
-      padding: 7px 20px;
+      background: $m-color_4;
+      padding: 7px 11px;
       border-radius: 6px;
-      -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+      box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
     }
   }
 
@@ -227,7 +231,7 @@
     display: flex;
     justify-content: space-between;
     padding: 17px 20px;
-    border-bottom: 1px solid $m-color_18;
+    border-bottom: 1px solid $m-color_2;
     display: none;
   }
 
@@ -235,7 +239,7 @@
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 0;
-    color: $m-color_14;
+    color: $m-color_6;
   }
 
   .invoice-action svg {
@@ -251,7 +255,7 @@
     }
 
     &:hover {
-      color: $m-color_14;
+      color: $primary;
       fill: rgba(27, 85, 226, 0.2392156863);
     }
   }
@@ -277,15 +281,7 @@
 
 .invoice .content-section {
   height: calc(100vh - 193px);
-}
 
-.content-section p {
-  color: $m-color_4 !important;
-}
-
-/*    Inv head section   */
-
-.invoice .content-section {
   .inv--head-section {
     margin-bottom: 50px;
 
@@ -304,8 +300,8 @@
         width: 42px;
         height: 42px;
         margin-right: 10px;
-        color: $m-color_14;
-        fill: rgba(0, 150, 136, 0.2784313725);
+        color: $primary;
+        fill: rgba(27, 85, 226, 0.2392156863);
       }
     }
 
@@ -328,7 +324,7 @@
       font-weight: 700;
       margin-bottom: 2px;
       font-size: 13px;
-      color: $m-color_14;
+      color: $primary;
     }
 
     .inv-detail-title {
@@ -360,7 +356,7 @@
       .inv-number {
         font-weight: 700;
         font-size: 13px;
-        color: $m-color_14;
+        color: $primary;
       }
     }
 
@@ -384,22 +380,22 @@
     margin-bottom: 50px;
 
     table {
-      border: 1px solid $dark;
-      background: transparent;
+      border: 1px solid $m-color_3;
     }
 
     thead tr {
       border: none;
+      background: $m-color_2;
     }
 
     th {
       border: none;
-      color: $m-color_14;
+      color: $primary;
     }
 
     td {
-      border-top: 1px solid $dark !important;
-      color: $m-color_4;
+      border-top: 1px solid $m-color_3;
+      color: $m-color_9;
       font-weight: 600;
     }
   }
@@ -410,7 +406,7 @@
     margin-bottom: 52px;
 
     .inv-title {
-      color: $m-color_14;
+      color: $primary;
       font-weight: 600;
       margin-bottom: 15px;
     }
@@ -438,6 +434,8 @@
     }
   }
 }
+
+/*    Inv head section   */
 
 /*    Inv detail section    */
 
@@ -505,7 +503,7 @@
 
     &.open-inv-sidebar {
       left: 0;
-      background: $m-color_10;
+      background: $white;
     }
   }
 
@@ -525,6 +523,7 @@
     border-radius: 50%;
   }
 }
+
 @media (max-width: 575px) {
   .invoice .content-section {
     .inv--head-section div.company-info {
@@ -538,7 +537,7 @@
   }
 }
 @media (max-width: 991px) {
-  .layout-top-spacing {
-    margin-top: 37px;
-  }
+    .layout-top-spacing {
+        margin-top: 37px;
+    }
 }

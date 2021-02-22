@@ -4,6 +4,7 @@
 
 @import '../../base/base';    // Base Variables
 
+
 /*
     Countdown Simple
 */
@@ -21,21 +22,23 @@
   .clock-count-container {
     width: 100px;
     height: 100px;
+    -webkit-box-shadow: 1px 2px 12px 0 rgba(31, 45, 61, 0.1);
+    box-shadow: 1px 2px 12px 0 rgba(31, 45, 61, 0.1);
     border-radius: 6px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid $m-color_18;
+    border: 1px solid $m-color_3;
   }
 
   .clock-val {
     font-size: 35px;
-    color: $m-color_13;
+    color: $primary;
     margin-bottom: 0;
   }
 
   .clock-text {
-    color: $m-color_6;
+    color: $dark;
     font-size: 15px;
     margin-bottom: 0;
     margin-top: 16px;
@@ -59,22 +62,24 @@
   .clock-count-container {
     width: 85px;
     height: 85px;
+    -webkit-box-shadow: 1px 2px 12px 0 rgba(31, 45, 61, 0.1);
+    box-shadow: 1px 2px 12px 0 rgba(31, 45, 61, 0.1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid $m-color_18;
+    border: 1px solid $m-color_3;
     margin: 0 0 12px 0;
   }
 
   .clock-val {
     font-size: 25px;
-    color: $m-color_13;
+    color: $primary;
     margin-bottom: 0;
   }
 
   .clock-text {
-    color: $m-color_6;
+    color: $dark;
     font-size: 15px;
     margin-bottom: 0;
     margin-top: 16px;

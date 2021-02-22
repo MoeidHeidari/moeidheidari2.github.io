@@ -66,8 +66,8 @@ $('.widget-content .warning.confirm').on('click', function () {
 
 $('.widget-content .warning.cancel').on('click', function () {
   const swalWithBootstrapButtons = swal.mixin({
-    confirmButtonClass: 'btn btn-secondary',
-    cancelButtonClass: 'btn btn-dark mr-3',
+    confirmButtonClass: 'btn btn-success',
+    cancelButtonClass: 'btn btn-danger mr-3',
     buttonsStyling: false,
   })
 

@@ -1,16 +1,19 @@
 /*
-  Component Card 8
+	Component Card 8
 */
 
 .component-card_8 {
-  border: 1px solid $m-color_12;
+  background: $white;
+  border: 1px solid $m-color_3;
   width: 24rem;
   margin: 0 auto;
+  -webkit-box-shadow: 4px 6px 10px -3px $m-color_4;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .progress-order {
     .progress-order-header {
       h6 {
-        color: $m-color_4;
+        color: $m-color_10;
         font-weight: 600;
         font-size: 16px;
       }
@@ -18,8 +21,8 @@
       span.badge {
         font-size: 12px;
         padding: 6px 10px;
-        color: $l-primary;
-        background-color: $primary;
+        color: $primary;
+        background-color: $l-primary;
       }
     }
 
@@ -39,11 +42,11 @@
             right: -34px;
 
             span.badge {
-              background-color: $m-color_10;
-              color: $m-color_3;
+              background-color: $white;
+              color: $primary;
+              box-shadow: 0 0 20px 0 #d0d0d0;
               font-size: 12px;
               padding: 4px 7px;
-              font-weight: 500;
             }
           }
         }
@@ -51,13 +54,12 @@
 
       .p-o-percentage {
         font-size: 14px;
-        color: $m-color_3;
+        color: $primary;
       }
 
       .progress {
         height: 6px;
         border-radius: 30px;
-        background-color: $m-color_10;
 
         .p-o-progress {
           border-radius: 30px;

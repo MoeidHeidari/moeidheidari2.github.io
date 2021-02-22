@@ -71,7 +71,7 @@
 
 .ps {
   .ps__rail-x:hover, .ps__rail-y:hover, .ps__rail-x:focus, .ps__rail-y:focus, .ps__rail-x.ps--clicking, .ps__rail-y.ps--clicking {
-    background-color: transparent;
+    background-color: #eee;
     opacity: 0.9;
   }
 }
@@ -81,7 +81,7 @@
  */
 
 .ps__thumb-x {
-  background-color: $m-color_6;
+  background-color: $m-color_5;
   border-radius: 6px;
   transition: background-color .2s linear, height .2s ease-in-out;
   -webkit-transition: background-color .2s linear, height .2s ease-in-out;
@@ -95,7 +95,7 @@
 }
 
 .ps__thumb-y {
-  background-color: $m-color_6;
+  background-color: $m-color_5;
   border-radius: 6px;
   transition: background-color .2s linear, width .2s ease-in-out;
   -webkit-transition: background-color .2s linear, width .2s ease-in-out;

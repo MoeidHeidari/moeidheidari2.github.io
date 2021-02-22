@@ -5,7 +5,7 @@
 */
 
 .widget-one_hybrid {
-  background: $m-color_10;
+  background: $white;
 
   .widget-heading {
     padding: 20px 13px;
@@ -26,37 +26,49 @@
       font-size: 21px;
       font-weight: 700;
       margin-bottom: 0;
-      color: $m-color_3;
     }
 
     h5 {
       margin-bottom: 0;
       font-size: 15px;
-      color: $m-color_6;
+      font-weight: 600;
+      color: $m-color_7;
     }
   }
 
-  &.widget-followers .widget-heading .w-icon {
-    color: $white;
-    border: 1px solid $primary;
-    background-color: $primary;
+  &.widget-followers {
+    background: $l-primary;
+
+    .widget-heading .w-icon {
+      color: $primary;
+      border: 1px solid $primary;
+    }
   }
 
-  &.widget-referral .widget-heading .w-icon {
-    color: $white;
-    border: 1px solid $danger;
-    background-color: $danger;
+  &.widget-referral {
+    background: $l-danger;
+
+    .widget-heading .w-icon {
+      color: $danger;
+      border: 1px solid $danger;
+    }
   }
 
-  &.widget-social .widget-heading .w-icon {
-    color: $white;
-    border: 1px solid $info;
-    background-color: $info;
+  &.widget-social {
+    background: $l-info;
+
+    .widget-heading .w-icon {
+      color: $info;
+      border: 1px solid $info;
+    }
   }
 
-  &.widget-engagement .widget-heading .w-icon {
-    color: $white;
-    border: 1px solid $m-color_14;
-    background-color: $m-color_14;
+  &.widget-engagement {
+    background: $l-success;
+
+    .widget-heading .w-icon {
+      color: $success;
+      border: 1px solid $success;
+    }
   }
 }

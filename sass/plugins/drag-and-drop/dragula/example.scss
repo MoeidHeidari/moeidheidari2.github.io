@@ -63,8 +63,14 @@ ul {
   cursor: -webkit-grabbing;
 }
 
-.dragula .ex-moved {
-  background-color: #e74c3c;
+.dragula {
+  .ex-moved {
+    background-color: #e74c3c;
+  }
+
+  &.ex-over {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 #left-lovehandles > div, #right-lovehandles > div {
@@ -91,17 +97,17 @@ ul {
   padding: 15px;
 
   .media {
-    background-color: $m-color_12;
+    background-color: $white;
     border-radius: 6px;
-    border: 1px solid $dark;
+    border: 1px solid $m-color_3;
     padding: 14px 26px;
   }
 }
 
 body.gu-unselectable .media.el-drag-ex-1 {
-  background-color: $m-color_12;
+  background-color: $white;
   border-radius: 6px;
-  border: 1px solid $dark;
+  border: 1px solid $m-color_3;
   padding: 14px 26px;
 }
 
@@ -117,7 +123,7 @@ body.gu-unselectable .media.el-drag-ex-1 {
 }
 
 .parent.ex-1 .dragula .media .media-body h6, body.gu-unselectable .media.el-drag-ex-1 .media-body h6 {
-  color: $m-color_4;
+  color: $dark;
   font-weight: 600;
   font-size: 15px;
   margin-top: 0;
@@ -135,17 +141,17 @@ body.gu-unselectable .media.el-drag-ex-1 {
   padding: 15px;
 
   .media {
-    background-color: $m-color_12;
+    background-color: $white;
     border-radius: 6px;
-    border: 1px solid $dark;
+    border: 1px solid $m-color_3;
     padding: 14px 26px;
   }
 }
 
 body.gu-unselectable .media.el-drag-ex-2 {
-  background-color: $m-color_12;
+  background-color: $white;
   border-radius: 6px;
-  border: 1px solid $dark;
+  border: 1px solid $m-color_3;
   padding: 14px 26px;
 }
 
@@ -166,7 +172,7 @@ body.gu-unselectable .media.el-drag-ex-2 {
 }
 
 .parent.ex-2 .dragula .media .media-body h6, body.gu-unselectable .media.el-drag-ex-2 .media-body h6 {
-  color: $m-color_4;
+  color: $dark;
   font-weight: 600;
   font-size: 15px;
   margin-top: 0;
@@ -208,13 +214,14 @@ body.gu-unselectable .media.el-drag-ex-2 {
   padding: 15px;
 
   div {
+    background-color: transparent !important;
     padding: 0;
     margin: 0;
 
     &.media {
-      background-color: $m-color_12;
+      background-color: $white;
       border-radius: 6px;
-      border: 1px solid $dark;
+      border: 1px solid $m-color_3;
       padding: 14px 26px;
       margin-bottom: 10px;
     }
@@ -222,14 +229,28 @@ body.gu-unselectable .media.el-drag-ex-2 {
 }
 
 body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
-  background-color: $m-color_12;
+  background-color: $white;
   border-radius: 6px;
-  border: 1px solid $dark;
+  border: 1px solid $m-color_3;
   padding: 14px 26px;
   margin-bottom: 10px;
 }
 
-.parent.ex-3 .dragula .media img, body.gu-unselectable .media.el-drag-ex-3.gu-mirror img {
+.parent.ex-3 .dragula {
+  div.media:hover {
+    border: 1px solid $m-color_1;
+    border-radius: 4px;
+  }
+
+  .media img {
+    width: 45px;
+    border-radius: 10%;
+    margin-right: 17px;
+    height: 45px;
+  }
+}
+
+body.gu-unselectable .media.el-drag-ex-3.gu-mirror img {
   width: 45px;
   border-radius: 10%;
   margin-right: 17px;
@@ -241,7 +262,7 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 }
 
 .parent.ex-3 .dragula .media .media-body h5, body.gu-unselectable .media.el-drag-ex-3.gu-mirror .media-body h5 {
-  color: $m-color_4;
+  color: $dark;
   font-weight: 600;
   font-size: 15px;
   margin-top: 0;
@@ -250,13 +271,13 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 
 .parent.ex-3 .dragula .media .media-body h5 span.usr-commented, body.gu-unselectable .media.el-drag-ex-3.gu-mirror .media-body h5 span.usr-commented {
   font-weight: 600;
-  color: $m-color_4;
+  color: $dark;
   font-size: 14px;
 }
 
 .parent.ex-3 .dragula .media .media-body h5 span.comment-topic, body.gu-unselectable .media.el-drag-ex-3.gu-mirror .media-body h5 span.comment-topic {
   font-weight: 600;
-  color: $info;
+  color: $secondary;
   font-size: 13px;
 }
 
@@ -267,7 +288,18 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
   font-size: 12px;
 }
 
-.parent.ex-4 .card.post .media.user-meta, body.gu-unselectable .card.post.el-drag-ex-4.gu-mirror .media.user-meta {
+.parent.ex-4 {
+  .dragula {
+    background-color: $m-color_1;
+    background-color: $white;
+  }
+
+  .card.post .media.user-meta {
+    padding: 10px;
+  }
+}
+
+body.gu-unselectable .card.post.el-drag-ex-4.gu-mirror .media.user-meta {
   padding: 10px;
 }
 
@@ -283,7 +315,7 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 }
 
 .parent.ex-4 .card.post .media.user-meta .media-body h5, body.gu-unselectable .card.post.el-drag-ex-4.gu-mirror .media.user-meta .media-body h5 {
-  color: $m-color_4;
+  color: $dark;
   font-weight: 600;
   font-size: 15px;
   margin-top: 0;
@@ -299,13 +331,9 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 
 .parent.ex-4 .card.post.text-post .card-body .post-content, body.gu-unselectable .card.post.text-post.el-drag-ex-4.gu-mirror .card-body .post-content {
   padding: 20px 18px;
-  color: $m-color_6 !important;
-  border-bottom: 1px solid $dark;
+  color: $m-color_6;
+  border-bottom: 1px solid $m-color_1;
   margin-bottom: 15px;
-}
-
-.parent.ex-4 .card.post.text-post .card-body .post-content p, body.gu-unselectable .card.post.text-post.el-drag-ex-4.gu-mirror .card-body .post-content p {
-  color: $m-color_6 !important;
 }
 
 .parent.ex-4 .card.post div.people-liked-post ul, body.gu-unselectable .card.post.el-drag-ex-4.gu-mirror div.people-liked-post ul {
@@ -316,7 +344,7 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  border: 2px solid rgba(59, 63, 92, 0.25);
+  border: 2px solid #ffffff;
   box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.3);
   margin-left: -21px;
 }
@@ -327,15 +355,15 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 }
 
 .parent.ex-4 .card.post div.people-liked-post .people-liked-post-name span a, body.gu-unselectable .card.post.el-drag-ex-4.gu-mirror div.people-liked-post .people-liked-post-name span a {
-  color: $info;
+  color: $danger;
   font-weight: 600;
   font-size: 13px;
 }
 
 .card.post.text-post {
-  background-color: $m-color_12;
+  background-color: $white;
   border-radius: 6px;
-  border: 1px solid $dark;
+  border: 1px solid $m-color_3;
   padding: 14px 26px;
 
   .card-body {
@@ -347,16 +375,20 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 
 .parent.ex-5 {
   .dragula {
+    background-color: $m-color_1;
+    background-color: $white;
+
     div, .gu-transit {
+      background-color: transparent !important;
       color: $white;
       align-self: center;
     }
 
     > {
       div, .gu-transit {
-        background-color: $m-color_12;
+        background-color: $white;
         border-radius: 6px;
-        border: 1px solid $dark;
+        border: 1px solid $m-color_3;
         padding: 14px 26px;
       }
     }
@@ -365,9 +397,9 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
   .handle {
     padding: 0 9px;
     margin-right: 5px;
-    background-color: $m-color_10;
+    background-color: $m-color_2;
     border-radius: 2px;
-    color: $white;
+    color: $dark;
     cursor: move;
   }
 }
@@ -375,9 +407,9 @@ body.gu-unselectable div.media.el-drag-ex-3.gu-mirror {
 body.gu-unselectable .handle {
   padding: 0 9px;
   margin-right: 5px;
-  background-color: $m-color_10;
+  background-color: $m-color_2;
   border-radius: 2px;
-  color: $white;
+  color: $dark;
   cursor: move;
 }
 
@@ -405,7 +437,7 @@ body.gu-unselectable .handle {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  border: 2px solid rgba(59, 63, 92, 0.25);
+  border: 2px solid #ffffff;
   box-shadow: 0px 0px 15px 1px rgba(113, 106, 202, 0.2);
   margin-left: -26px;
 }
@@ -415,9 +447,12 @@ body.gu-unselectable .handle {
 }
 
 .parent.ex-5 .dragula {
-  .media .media-body h5, .gu-transit .media.el-drag-ex-5.gu-mirror .media-body h5 {
+  .media .media-body h5, .gu-transit .media .media-body h5 {
+    /*color: #141471;*/
     font-weight: 600;
-    color: $m-color_4;
+    color: $dark;
+
+    /*font-weight: 600;*/
     font-size: 15px;
     margin-top: 0;
     margin-bottom: 0;

@@ -29,12 +29,12 @@
     a {
       padding: 10px 15px;
       font-weight: 600;
-      color: $m-color_6;
+      color: $dark;
     }
 
     padding: 10px 0;
     font-weight: 600;
-    color: $m-color_6;
+    color: $dark;
     border-radius: 4px;
 
     &:not(:last-child) {
@@ -49,46 +49,46 @@
 
 .pagination-default {
   li {
-    border: 2px solid $m-color_18;
+    border: 2px solid $m-color_3;
 
     &:hover {
-      border: 2px solid $m-color_14 !important;
+      border: 2px solid $primary !important;
 
       a {
-        color: $m-color_14;
+        color: $primary;
       }
     }
 
     &.active {
-      border: 2px solid $m-color_14 !important;
-      color: $m-color_14;
+      border: 2px solid $primary !important;
+      color: $primary;
     }
 
     a.active:hover, &.active a {
-      color: $m-color_14;
+      color: $primary;
     }
   }
 
   .prev {
-    border: 2px solid $m-color_18;
+    border: 2px solid $m-color_3;
 
     &:hover {
-      border: 2px solid $m-color_14;
+      border: 2px solid $primary;
 
       a, svg {
-        color: $m-color_14;
+        color: $primary;
       }
     }
   }
 
   .next {
-    border: 2px solid $m-color_18;
+    border: 2px solid $m-color_3;
 
     &:hover {
-      border: 2px solid $m-color_14;
+      border: 2px solid $primary;
 
       a, svg {
-        color: $m-color_14;
+        color: $primary;
       }
     }
   }
@@ -100,14 +100,14 @@
 
 .pagination-solid {
   li {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
 
     &:hover a {
-      color: $m-color_14;
+      color: $primary;
     }
 
     &.active {
-      background-color: $m-color_14 !important;
+      background-color: $primary !important;
       color: $white;
     }
 
@@ -117,10 +117,10 @@
   }
 
   .prev {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
 
     &:hover {
-      background-color: $m-color_14;
+      background-color: $primary;
 
       a, svg {
         color: $white;
@@ -129,10 +129,10 @@
   }
 
   .next {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
 
     &:hover {
-      background-color: $m-color_14;
+      background-color: $primary;
 
       a, svg {
         color: $white;
@@ -153,13 +153,13 @@
   margin-bottom: 0;
 
   .prev {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
     border-radius: 50%;
     padding: 10px 11px;
     margin-right: 5px;
 
     &:hover {
-      background-color: $m-color_14;
+      background-color: $primary;
 
       svg {
         color: $white;
@@ -168,13 +168,13 @@
   }
 
   .next {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
     border-radius: 50%;
     padding: 10px 11px;
     margin-left: 5px;
 
     &:hover {
-      background-color: $m-color_14;
+      background-color: $primary;
 
       svg {
         color: $white;
@@ -203,15 +203,15 @@
       border-bottom-right-radius: 50px;
     }
 
-    background-color: $m-color_18;
+    background-color: $m-color_3;
 
     a {
       padding: 10px 15px;
       font-weight: 600;
-      color: $m-color_6;
+      color: $dark;
 
       &.active {
-        background-color: $m-color_14 !important;
+        background-color: $primary !important;
         border-radius: 6px;
         color: $white;
 
@@ -221,13 +221,13 @@
       }
 
       &:hover {
-        color: $m-color_14;
+        color: $primary;
       }
     }
 
     padding: 10px 0;
     font-weight: 600;
-    color: $m-color_6;
+    color: $dark;
   }
 }
 
@@ -247,13 +247,13 @@
   margin-bottom: 0;
 
   .prev {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
     border-radius: 50%;
     padding: 10px 11px;
     margin-right: 25px;
 
     &:hover {
-      background-color: $m-color_14;
+      background-color: $primary;
 
       svg {
         color: $white;
@@ -262,13 +262,13 @@
   }
 
   .next {
-    background-color: $m-color_18;
+    background-color: $m-color_3;
     border-radius: 50%;
     padding: 10px 11px;
     margin-left: 25px;
 
     &:hover {
-      background-color: $m-color_14;
+      background-color: $primary;
 
       svg {
         color: $white;
@@ -297,15 +297,15 @@
       border-bottom-right-radius: 50px;
     }
 
-    background-color: $m-color_18;
+    background-color: $m-color_3;
 
     a {
       padding: 10px 15px;
       font-weight: 600;
-      color: $m-color_6;
+      color: $dark;
 
       &.active {
-        background-color: $m-color_14 !important;
+        background-color: $primary !important;
         border-radius: 6px;
         color: $white;
 
@@ -315,13 +315,13 @@
       }
 
       &:hover {
-        color: $m-color_14;
+        color: $primary;
       }
     }
 
     padding: 10px 0;
     font-weight: 600;
-    color: $m-color_6;
+    color: $dark;
   }
 }
 
@@ -335,31 +335,31 @@
   margin-bottom: 0;
 
   .prev {
-    border: 2px solid $m-color_18;
+    border: 2px solid $m-color_3;
     border-radius: 50%;
     padding: 8px 11px;
     margin-right: 25px;
 
     &:hover {
-      border: 2px solid $m-color_14;
+      border: 2px solid $primary;
 
       svg {
-        color: $m-color_14;
+        color: $primary;
       }
     }
   }
 
   .next {
-    border: 2px solid $m-color_18;
+    border: 2px solid $m-color_3;
     border-radius: 50%;
     padding: 8px 11px;
     margin-left: 25px;
 
     &:hover {
-      border: 2px solid $m-color_14;
+      border: 2px solid $primary;
 
       svg {
-        color: $m-color_14;
+        color: $primary;
       }
     }
   }
@@ -377,11 +377,11 @@
   li {
     padding: 10px 0;
     font-weight: 600;
-    color: $m-color_6;
-    border: 1px solid $m-color_18;
+    color: $dark;
+    border: 1px solid $m-color_3;
 
     &.active {
-      background-color: $m-color_18;
+      background-color: $m-color_3;
     }
 
     &:first-child {
@@ -397,18 +397,18 @@
     a {
       padding: 10px 15px;
       font-weight: 600;
-      color: $m-color_6;
+      color: $dark;
 
       &:hover {
-        color: $m-color_14;
+        color: $primary;
       }
     }
 
     &.active a {
-      background-color: $m-color_18;
-      border: 2px solid $m-color_14 !important;
+      background-color: #ffffff;
+      border: 2px solid $primary !important;
       border-radius: 6px;
-      color: $m-color_14;
+      color: $primary;
     }
   }
 }

@@ -1,13 +1,15 @@
 /*
-  Component Card 7
+	Component Card 7
 */
 
 .component-card_7 {
-  background-color: rgba(27, 85, 226, 0.3803921569);
+  background-color: $primary;
   color: $white;
   border: none;
   width: 18rem;
   margin: 0 auto;
+  -webkit-box-shadow: 4px 6px 10px -3px $m-color_4;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .card-body {
     padding: 23px 10px;

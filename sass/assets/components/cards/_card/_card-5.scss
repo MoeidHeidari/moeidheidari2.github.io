@@ -1,5 +1,5 @@
 /*
-  Component Card 5
+	Component Card 5
 */
 
 .component-card_5 {
@@ -7,7 +7,9 @@
   margin: 0 auto;
   border: none;
   border-radius: 8px;
-  background: rgba(92, 26, 195, 0.26);
+  background: $secondary;
+  -webkit-box-shadow: 4px 6px 10px -3px $m-color_4;
+  box-shadow: 4px 6px 10px -3px $m-color_4;
 
   .card-body {
     padding: 30px 30px;

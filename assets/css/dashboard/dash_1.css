@@ -1,41 +1,27 @@
 .layout-spacing {
     padding-bottom: 25px;
 }
-.footer-wrapper {
-    padding: 10px 0 10px 0;
+.layout-top-spacing {
+    margin-top: 15px;
 }
 .widget {
     position: relative;
     padding: 20px;
     border-radius: 8px;
-    border: none;
-    background: #0e1726;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
+    /*border: none;*/
+    background: #fff;
 }
 .widget .widget-heading {
     margin-bottom: 15px;
 }
 .widget h5 {
+    font-weight: 700;
     font-size: 19px;
     letter-spacing: 0px;
     margin-bottom: 0;
-    color: #e0e6ed;
+    color: #515365;
 }
-
-.apexcharts-legend-text {
-    color: #bfc9d4!important;
-}
-.apexcharts-tooltip.dark {
-    background: #191e3a!important;
-    box-shadow: none;
-}
-.apexcharts-tooltip.dark .apexcharts-tooltip-title {
-    background: #191e3a!important;
-    border-bottom: 1px solid #191e3a;
-}
-
+.widget .widget-content {}
 
 
 /*
@@ -46,13 +32,13 @@
 
 .widget-two {
     position: relative;
-    background: #0e1726;
+    background: #fff;
     padding: 0;
     border-radius: 8px;
     height: 100%;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
+        /*box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);*/
+        border: 1px solid #e0e6ed;
+    box-shadow: 0 0 40px 0 rgba(94,92,154,.06);
 }
 .widget-two .widget-content {
     font-size: 17px;
@@ -73,7 +59,7 @@
 }
 .widget-two .w-numeric-value .w-icon {
     display: inline-block;
-    background: #e2a03f;
+    background: #ffeccb;
     padding: 13px 12px;
     border-radius: 50%;
     display: inline-flex;
@@ -83,14 +69,14 @@
 }
 .widget-two .w-numeric-value svg {
     display: block;
-    color: #0e1726;
+    color: #e2a03f;
     width: 20px;
     height: 20px;
 }
 .widget-two .w-numeric-value .w-value {
     font-size: 19px;
     display: block;
-    color: #e0e6ed;
+    color: #0e1726;
     font-weight: 700;
     margin-bottom: -9px;
 }
@@ -125,7 +111,7 @@
 }
 .widget-one .w-numeric-value .w-icon {
     display: inline-block;
-    background: #c2d5ff;
+    background: #fff;
     padding: 13px 12px;
     border-radius: 50%;
     display: inline-flex;
@@ -162,13 +148,13 @@
 
 .widget-three {
     position: relative;
-    background: #0e1726;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
     height: 100%;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
+        /*box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.09019607843137255), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);*/
+        border: 1px solid #e0e6ed;
+    box-shadow: 0 0 40px 0 rgba(94,92,154,.06);
 }
 .widget-three .widget-heading {
     margin-bottom: 54px;
@@ -176,7 +162,7 @@
 .widget-three .widget-heading h5 {
     font-size: 19px;
     display: block;
-    color: #e0e6ed;
+    color: #0e1726;
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -205,22 +191,22 @@
     height: 17px;
 }
 .widget-three .widget-content .summary-list:nth-child(1) .w-icon {
-    background: #5c1ac3;
+    background: #dccff7;
 }
 .widget-three .widget-content .summary-list:nth-child(2) .w-icon {
-    background: #009688;
+    background: #e6ffbf;
 }
 .widget-three .widget-content .summary-list:nth-child(3) .w-icon {
-    background: #e2a03f ;
+    background: #ffeccb ;
 }
 .widget-three .widget-content .summary-list:nth-child(1) .w-icon svg {
-    color: #dccff7;
+    color: #5c1ac3;
 }
 .widget-three .widget-content .summary-list:nth-child(2) .w-icon svg {
-    color: #e6ffbf;
+    color: #009688;
 }
 .widget-three .widget-content .summary-list:nth-child(3) .w-icon svg {
-    color: #ffeccb;
+    color: #e2a03f;
 }
 .widget-three .widget-content .w-summary-details {
     width: 100%;
@@ -247,7 +233,7 @@
     margin-bottom: 0;
     height: 6px;
     border-radius: 20px;
-    box-shadow: none;
+    box-shadow: 0 2px 2px rgba(224, 230, 237, 0.4588235294117647), 1px 6px 7px rgba(224, 230, 237, 0.4588235294117647);
 }
 
 /*
@@ -284,8 +270,8 @@
     letter-spacing: 1px;
     font-weight: 600;
     padding: 5px 7px;
-    background: #1b55e2;
-    color: #fff;
+    background: #c2d5ff;
+    color: #1b55e2;
     border-radius: 4px;
 }
 
@@ -321,9 +307,10 @@
 .widget-table-one .widget-heading {
     display: flex;
 }
+.widget-table-one .widget-content {}
 .widget-table-one .transactions-list {
     padding: 12px 12px;
-    border: 1px dashed #3b3f5c;
+    border: 1px dashed #bfc9d4;
     border-radius: 6px;
     -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
@@ -360,14 +347,14 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #e7515a;
-    color: #ffe1e2;
+    background-color: #ffe1e2;
+    color: #e7515a;
 }
 .widget-table-one .transactions-list .t-item .t-icon .icon {
     position: relative;
     display: inline-block;
     padding: 10px;
-    background-color: #e2a03f;
+    background-color: #ffeccb;
     border-radius: 50%;
 }
 .widget-table-one .transactions-list .t-item .t-icon .icon svg {
@@ -376,7 +363,7 @@
     justify-content: center;
     width: 19px;
     height: 19px;
-    color: #ffeccb;
+    color: #e2a03f;
     stroke-width: 2;
 }
 .widget-table-one .transactions-list .t-item .t-name {
@@ -588,14 +575,14 @@
     padding: 0 0;
     margin-bottom: 18px;
     padding-bottom: 18px;
-    border-bottom: 1px dashed #3b3f5c;
+    border-bottom: 1px dashed #bfc9d4;
 }
 .widget-account-invoice-one .invoice-box h5 {
     text-align: center;
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #bfc9d4;
+    color: #1b55e2;
 }
 .widget-account-invoice-one .invoice-box .acc-amount {
     text-align: center;
@@ -607,7 +594,7 @@
 .widget-account-invoice-one .invoice-box .inv-detail {
     margin-bottom: 18px;
     padding-bottom: 18px;
-    border-bottom: 1px dashed #3b3f5c;
+    border-bottom: 1px dashed #bfc9d4;
 }
 .widget-account-invoice-one .invoice-box [class*="info-detail-"]:not(.info-sub) {
     display: flex;
@@ -654,6 +641,7 @@
     position: relative;
 }
 .widget-table-two h5 {
+    font-weight: 700;
     font-size: 19px;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -665,13 +653,12 @@
     border-collapse: separate;
     border-spacing: 0 5px;
     margin-bottom: 0;
-    background: transparent;
 }
 .widget-table-two .table > thead > tr > th {
     text-transform: initial;
     font-weight: 600;
     border-top: none;
-    background: #191e3a;
+    background: #e0e6ed;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -693,7 +680,7 @@
     border-top-right-radius: 6px;
 }
 .widget-table-two .table > thead > tr > th .th-content {
-    color: #25d5e4;
+    color: #1b55e2;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
@@ -729,7 +716,7 @@
     color: #888ea8;
 }
 .widget-table-two .table > tbody > tr:hover > td .td-content {
-    color: #bfc9d4;
+    color: #515365;
 }
 .widget-table-two .table > tbody > tr > td:first-child {
     border-top-left-radius: 6px;
@@ -747,7 +734,7 @@
     border-bottom-right-radius: 6px;
 }
 .widget-table-two .table .td-content.customer-name {
-    color: #bfc9d4;
+    color: #515365;
 }
 .widget-table-two .table .td-content.product-brand {
     letter-spacing: 1px;
@@ -766,15 +753,19 @@
 }
 .widget-table-two .table tr:hover .td-content .badge {
     transform: translateY(-3px);
-    background-color: transparent;
+}
+.widget-table-two .table tr .td-content .outline-badge-primary {
+    background-color: #c2d5ff;
 }
 .widget-table-two .table tr .td-content .outline-badge-success {
     color: #009688;
+    background-color: #e6ffbf;
     border-color: #009688;
 }
-[id*="apexcharts-donut-slice-"] {
-    filter: none;
+.widget-table-two .table tr .td-content .outline-badge-danger {
+    background-color: #ffe1e2;
 }
+
 
 /*
     ===========================
@@ -786,6 +777,7 @@
     position: relative;
 }
 .widget-table-three h5 {
+    font-weight: 700;
     font-size: 19px;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -797,7 +789,6 @@
     border-collapse: separate;
     border-spacing: 0 5px;
     margin-bottom: 0;
-    background: transparent;
 }
 .widget-table-three .table > thead > tr > th:first-child .th-content {
     margin-left: 10px;
@@ -810,7 +801,7 @@
     text-transform: initial;
     font-weight: 600;
     border-top: none;
-    background: #191e3a;
+    background: #e0e6ed;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -834,7 +825,7 @@
     border-top-right-radius: 6px;
 }
 .widget-table-three .table > thead > tr > th .th-content {
-    color: #25d5e4;
+    color: #1b55e2;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
@@ -862,7 +853,7 @@
     color: #888ea8;
 }
 .widget-table-three .table > tbody > tr:hover > td .td-content {
-    color: #bfc9d4;
+    color: #3b3f5c;
 }
 .widget-table-three .table > tbody > tr > td:first-child {
     border-top-left-radius: 6px;
@@ -888,7 +879,7 @@
     padding: 10px 0 10px 15px;
 }
 .widget-table-three .table .td-content.product-name {
-    color: #bfc9d4;
+    color: #515365;
     letter-spacing: 1px;
 }
 .widget-table-three .table .td-content img {
@@ -930,7 +921,11 @@
     transform: none;
     letter-spacing: 1px;
     border-bottom: 1px dashed #bfc9d4;
-    color: #d3d3d3;
+}
+
+
+.footer-wrapper {
+    padding: 10px 0 10px 0;
 }
 
 /*
@@ -1039,6 +1034,10 @@
     .widget-table-three .table .td-content img {
         display: block;
         margin: 0 auto 5px auto;
+    }
+
+    .footer-wrapper {
+        padding: 10px 23px 10px 14px;
     }
 
 }

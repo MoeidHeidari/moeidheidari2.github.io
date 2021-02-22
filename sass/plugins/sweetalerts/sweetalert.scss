@@ -43,7 +43,7 @@ body {
 }
 
 .swal2-modal {
-  background-color: $m-color_10 !important;
+  background-color: $white;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -64,7 +64,7 @@ body {
   }
 
   .swal2-title {
-    color: $m-color_4 !important;
+    color: $dark !important;
     font-size: 24px !important;
     text-align: center;
     font-weight: normal;
@@ -215,24 +215,18 @@ body {
   }
 
   .swal2-input, .swal2-file, .swal2-textarea {
-    height: auto;
-    border: 1px solid $m-color_12 !important;
-    color: $m-color_13;
-    font-size: 15px;
-    padding: 8px 10px;
-    letter-spacing: 1px;
-    height: calc(1.4em + 1.4rem + 2px);
-    padding: .75rem 1.25rem;
-    border-radius: 6px;
-    background: $m-color_12;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid $m-color_2;
+    -webkit-box-shadow: inset 0px 3px 25px 0px rgba(113, 106, 202, 0.1);
+    box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.1);
+    -webkit-transition: border-color box-shadow .3s;
+    transition: border-color box-shadow .3s;
   }
-}
 
-pre {
-  color: $m-color_14;
-}
-
-.swal2-modal {
   .swal2-input.swal2-inputerror, .swal2-file.swal2-inputerror, .swal2-textarea.swal2-inputerror {
     border-color: $danger !important;
     -webkit-box-shadow: 0 0 2px #f27474 !important;
@@ -420,7 +414,7 @@ pre {
 
   &.swal2-error {
     border-color: $danger !important;
-    border: 5px solid #1b2e4b !important;
+    border: 5px solid $m-color_1 !important;
     box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.2);
 
     .swal2-x-mark {
@@ -454,8 +448,8 @@ pre {
   &.swal2-warning {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: $m-color_15 !important;
-    border: solid 5px $m-color_12 !important;
-    box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
+    border: 5px solid $m-color_1 !important;
+    box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.2);
     font-size: 60px;
     line-height: 80px;
     text-align: center;
@@ -463,9 +457,9 @@ pre {
 
   &.swal2-info {
     font-family: 'Open Sans', sans-serif;
-    color: $m-color_7 !important;
-    border: solid 5px $m-color_12 !important;
-    box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
+    color: $primary !important;
+    border: 5px solid $m-color_1 !important;
+    box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.2);
     font-size: 60px;
     line-height: 80px;
     text-align: center;
@@ -473,11 +467,11 @@ pre {
 
   &.swal2-question {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: $m-color_7 !important;
-    border: solid 5px $m-color_12 !important;
+    color: $secondary !important;
+    border: solid 5px $m-color_2 !important;
     border-color: none !important;
     text-align: center;
-    box-shadow: 0px 9px 20px 0px rgba(25, 30, 58, 0.35);
+    box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.2);
   }
 
   &:not(.swal2-animate-error-icon):not(.swal2-animate-success-icon) {
@@ -531,7 +525,8 @@ pre {
   .swal2-success-ring {
     width: 80px;
     height: 80px;
-    border: 5px solid $m-color_12 !important;
+    border: 5px solid $m-color_1 !important;
+    box-shadow: 0px 3px 25px 0px rgba(113, 106, 202, 0.2);
     border-radius: 50%;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -554,7 +549,7 @@ pre {
 
   [class^='swal2-success-line'] {
     height: 5px;
-    background-color: $m-color_14 !important;
+    background-color: $m-color_13 !important;
     display: block;
     border-radius: 2px;
     position: absolute;
@@ -607,11 +602,11 @@ pre {
     }
 
     &.swal2-activeprogressstep {
-      background: $m-color_18 !important;
+      background: $m-color_13 !important;
 
       ~ {
         .swal2-progresscircle, .swal2-progressline {
-          background: $m-color_7 !important;
+          background: $m-color_2 !important;
         }
       }
     }
@@ -986,13 +981,7 @@ pre {
     opacity: 1;
   }
 }
-.swal2-popup.swal2-toast {
-  -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2)!important;
-  -moz-box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2)!important;
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2)!important;
-  background: #0e1726;
-  color: #e0e6ed!important;
-}
+
 .swal2-animate-x-mark {
   -webkit-animation: animate-x-mark 0.5s;
   animation: animate-x-mark 0.5s;

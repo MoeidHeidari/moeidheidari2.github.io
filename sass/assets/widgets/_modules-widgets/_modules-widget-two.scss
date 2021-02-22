@@ -6,10 +6,13 @@
 
 .widget-two {
   position: relative;
-  background: $m-color_10;
+  background: $white;
   padding: 0;
   border-radius: 8px;
   height: 100%;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.08), 0 1px 20px 0 rgba(0, 0, 0, 0.07), 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
 
   .widget-content {
     font-size: 17px;
@@ -32,7 +35,7 @@
 
     .w-icon {
       display: inline-block;
-      background: $warning;
+      background: $l-warning;
       padding: 13px 12px;
       border-radius: 50%;
       display: inline-flex;
@@ -43,7 +46,7 @@
 
     svg {
       display: block;
-      color: $m-color_10;
+      color: $warning;
       width: 20px;
       height: 20px;
     }
@@ -51,7 +54,7 @@
     .w-value {
       font-size: 19px;
       display: block;
-      color: $m-color_3;
+      color: $m-color_10;
       font-weight: 700;
       margin-bottom: -9px;
     }

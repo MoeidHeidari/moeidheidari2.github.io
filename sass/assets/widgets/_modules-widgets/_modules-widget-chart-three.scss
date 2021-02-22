@@ -6,12 +6,12 @@
 
 .widget {
   &.widget-chart-three {
-    background: $m-color_10;
+    background: $white;
 
     .widget-heading {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px dashed $dark;
+      border-bottom: 1px dashed $m-color_3;
       padding: 20px 20px;
       margin-bottom: 0;
       padding-bottom: 20px;
@@ -19,7 +19,8 @@
       h5 {
         font-size: 17px;
         display: block;
-        color: $m-color_3;
+        color: $m-color_10;
+        font-weight: 600;
         margin-bottom: 0;
       }
 

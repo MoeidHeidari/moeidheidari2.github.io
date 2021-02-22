@@ -28,7 +28,7 @@
     align-self: center;
 
     .media-heading {
-      color: $m-color_4;
+      color: $dark;
       font-weight: 700;
       margin-bottom: 10px;
       font-size: 17px;
@@ -36,7 +36,7 @@
     }
 
     .media-text {
-      color: $m-color_6;
+      color: $m-color_9;
       margin-bottom: 0;
       font-size: 14px;
       letter-spacing: 0;
@@ -63,7 +63,7 @@
     margin-bottom: 9px;
 
     a {
-      color: $m-color_7;
+      color: $m-color_9;
       font-size: 13px;
       font-weight: 700;
       margin-right: 8px;
@@ -83,13 +83,13 @@
     margin-bottom: 9px;
 
     a {
-      color: $m-color_7;
+      color: $m-color_9;
       font-size: 13px;
       font-weight: 700;
       margin-right: 8px;
 
       svg {
-        color: $m-color_7;
+        color: $m-color_6;
         margin-right: 6px;
         vertical-align: sub;
         width: 18px;
@@ -145,7 +145,7 @@
           }
 
           &:hover svg {
-            color: $m-color_3;
+            color: $primary;
             fill: rgba(27, 85, 226, 0.2392156863);
           }
         }

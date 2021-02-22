@@ -4,6 +4,7 @@
 
 @import '../../base/base';    // Base Variables
 
+
 /*----------Theme checkbox---------*/
 
 .new-control {
@@ -35,7 +36,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: $m-color_9;
+    background-color: $m-color_3;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
@@ -227,7 +228,7 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-      background-color: $m-color_9;
+      background-color: $m-color_3;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50% 50%;

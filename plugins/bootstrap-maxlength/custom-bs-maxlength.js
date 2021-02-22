@@ -5,13 +5,13 @@ $('input.threshold').maxlength({
 $('input.few-options').maxlength({
     alwaysShow: true,
     threshold: 10,
-    warningClass: "badge badge-secondary",
+    warningClass: "badge badge-success",
     limitReachedClass: "badge badge-warning"
 });
 $('input.alloptions').maxlength({
   	alwaysShow: true,
   	threshold: 10,
-  	warningClass: "badge badge-secondary",
+  	warningClass: "badge badge-success",
     limitReachedClass: "badge badge-dark",
   	separator: ' of ',
   	preText: 'You have ',

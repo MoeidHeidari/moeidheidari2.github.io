@@ -5,7 +5,7 @@
 */
 
 .widget-five {
-  background: $m-color_10;
+  background: $white;
   padding: 28px 0 0 0;
   height: 100%;
 
@@ -16,7 +16,7 @@
       padding-left: 15px;
       padding-right: 15px;
       padding-bottom: 23px;
-      border-bottom: 1px dashed $dark;
+      border-bottom: 1px dashed $m-color_3;
     }
 
     .header-body {
@@ -66,8 +66,8 @@
       .task-left {
         margin-bottom: 0;
         font-size: 30px;
-        color: $m-color_13;
-        background: $m-color_19;
+        color: $primary;
+        background: $l-primary;
         font-weight: 600;
         border-radius: 50%;
         display: inline-flex;
@@ -75,10 +75,10 @@
         width: 76px;
         justify-content: center;
         padding: 13px 0px;
-        border: 5px solid $m-color_18;
+        border: 5px solid $white;
         margin-bottom: 20px;
         -webkit-box-shadow: 0px 0px 8px 2px $m-color_3;
-        box-shadow: 0px 0px 8px 2px rgba(172, 176, 195, 0.2392156863);
+        box-shadow: 0px 0px 8px 2px $m-color_3;
       }
 
       .task-completed {
@@ -94,7 +94,7 @@
         margin-bottom: 0;
 
         span {
-          color: $info;
+          color: $danger;
           font-weight: 700;
         }
       }

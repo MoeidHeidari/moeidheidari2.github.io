@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
           css: { 
               width: '250px',
               backgroundColor: 'transparent',
-              top: '80px',
+              top: '12px',
               left: 'auto',
               right: '15px',
               border: 0,

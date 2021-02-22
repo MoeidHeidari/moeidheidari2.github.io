@@ -128,18 +128,14 @@
       }
 
       .current a {
-        background: $m-color_19;
-        color: $m-color_14;
+        background: $primary;
+        color: $white;
         cursor: default;
 
-        /* border-bottom: 2px solid $m-color_14;*/
-
         &:hover, &:active {
-          background: $m-color_19;
-          color: $m-color_14;
+          background: $primary;
+          color: $white;
           cursor: default;
-
-          /* border-bottom: 2px solid $m-color_14;*/
         }
       }
 
@@ -165,7 +161,7 @@
     }
 
     .content {
-      background: $m-color_10;
+      background: $m-color_1;
       display: block;
       margin-top: 27px;
       min-height: 18em;
@@ -239,7 +235,7 @@
 
   > .actions {
     a {
-      background-color: $m-color_9;
+      background-color: $primary;
       color: $white;
       display: block;
       padding: 0.5em 1em;
@@ -249,7 +245,7 @@
       border-radius: 5px;
 
       &:hover, &:active {
-        background-color: $m-color_9;
+        background-color: $primary;
         color: $white;
         display: block;
         padding: 0.5em 1em;
@@ -261,12 +257,12 @@
     }
 
     .disabled a {
-      background: $m-color_18;
-      color: $m-color_3;
+      background: $m-color_2;
+      color: $m-color_6;
 
       &:hover, &:active {
-        background: $m-color_18;
-        color: $m-color_3;
+        background: $m-color_2;
+        color: $m-color_6;
       }
     }
   }
@@ -408,11 +404,11 @@
       }
 
       .last.current.done a {
-        background: $m-color_14;
+        background: $primary;
         color: $white;
 
         &:hover, &:active {
-          background: $m-color_14;
+          background: $primary;
           color: $white;
         }
       }
@@ -481,13 +477,13 @@
 
       .current a {
         background: transparent;
-        color: $m-color_4;
+        color: $dark;
         cursor: default;
         text-align: center;
 
         &:hover, &:active {
           background: transparent;
-          color: $m-color_4;
+          color: $dark;
           cursor: default;
           text-align: center;
         }
@@ -506,7 +502,7 @@
           left: 0;
           margin-left: auto;
           margin-right: auto;
-          background-color: $m-color_12;
+          background-color: $m-color_1;
         }
       }
     }
@@ -528,55 +524,52 @@
 
       .disabled a {
         .number, &:hover .number, &:active .number {
-          border-color: $m-color_18;
-          background-color: $m-color_18;
-          color: $m-color_3;
+          border-color: $m-color_1;
+          background-color: $m-color_1;
         }
       }
 
       .current:not(.done) a {
         .number, &:hover .number, &:active .number {
-          border-color: $m-color_14;
-          background: $m-color_19;
-          color: $m-color_14;
+          border-color: $primary;
+          background-color: $primary;
+          color: $white;
         }
       }
 
       .done a {
         border: none;
         background-color: transparent;
-        color: $m-color_14;
+        color: $dark;
         font-weight: 600;
 
         &:hover, &:active {
           border: none;
           background-color: transparent;
-          color: $m-color_14;
+          color: $dark;
           font-weight: 600;
         }
 
         .number {
-          border-color: $m-color_18;
-          color: $m-color_14;
-          background-color: $m-color_18;
+          border-color: $primary;
         }
       }
 
       ul li.done {
         &::after, &::before {
-          background-color: $m-color_19;
+          background-color: $primary;
         }
       }
 
       .last.current.done a {
         border: none;
         background-color: transparent;
-        color: $m-color_14;
+        color: $dark;
 
         &:hover, &:active {
           border: none;
           background-color: transparent;
-          color: $m-color_14;
+          color: $dark;
         }
       }
     }
@@ -618,26 +611,26 @@
       }
 
       .disabled a {
-        background-color: $m-color_18;
-        color: $m-color_20;
-        border: solid 1px $m-color_18;
+        background-color: $m-color_2;
+        color: $dark;
+        border: solid 1px $m-color_4;
 
         &:hover, &:active {
-          background-color: $m-color_18;
-          color: $m-color_20;
-          border: solid 1px $m-color_18;
+          background-color: $m-color_2;
+          color: $dark;
+          border: solid 1px $m-color_4;
         }
       }
 
       a {
-        border-bottom: 2px solid $m-color_19;
+        border-bottom: 2px solid $m-color_1;
         font-size: 15px;
         font-weight: 600;
         margin-right: 6px;
         border-radius: 20px;
 
         &:hover, &:active {
-          border-bottom: 2px solid $m-color_19;
+          border-bottom: 2px solid $m-color_1;
           font-size: 15px;
           font-weight: 600;
           margin-right: 6px;
@@ -659,40 +652,36 @@
       }
 
       .done a {
-        border: 1px solid $m-color_18;
-        background-color: $m-color_18;
-        color: $m-color_14;
-        font-weight: 700;
+        border: 1px solid $m-color_4;
+        background-color: transparent;
+        color: $dark;
 
         &:hover, &:active {
-          border: 1px solid $m-color_18;
-          background-color: $m-color_18;
-          color: $m-color_14;
-          font-weight: 700;
+          border: 1px solid $m-color_4;
+          background-color: transparent;
+          color: $dark;
         }
 
         .number {
-          border-color: $m-color_14;
+          border-color: $primary;
         }
       }
 
       ul li.done:not(.last) {
         &::after, &::before {
-          background-color: $m-color_14;
+          background-color: $primary;
         }
       }
 
       .last.current.done a {
-        border: 1px solid $m-color_18;
-        background-color: $m-color_18;
-        color: $m-color_14;
-        font-weight: 700;
+        border: 1px solid $m-color_4;
+        background-color: transparent;
+        color: $dark;
 
         &:hover, &:active {
-          border: 1px solid $m-color_18;
-          background-color: $m-color_18;
-          color: $m-color_14;
-          font-weight: 700;
+          border: 1px solid $m-color_4;
+          background-color: transparent;
+          color: $dark;
         }
       }
     }
@@ -776,7 +765,7 @@
           left: 0;
           margin-left: auto;
           margin-right: auto;
-          background-color: $m-color_12;
+          background-color: $m-color_1;
         }
       }
     }
@@ -792,8 +781,7 @@
       a {
         .number, &:hover .number, &:active .number {
           border-color: $dark;
-          background-color: $m-color_14;
-          font-weight: 700;
+          background-color: $white;
           position: relative;
           z-index: 10;
           text-align: center;
@@ -802,9 +790,8 @@
 
       .disabled a {
         .number, &:hover .number, &:active .number {
-          border-color: $m-color_18;
-          background-color: $m-color_18;
-          color: $m-color_3;
+          border-color: $m-color_1;
+          background-color: $m-color_1;
         }
       }
 
@@ -820,15 +807,13 @@
         }
 
         .number {
-          border-color: $m-color_18;
-          color: $m-color_14;
-          background-color: $m-color_18;
+          border-color: $primary;
         }
       }
 
       ul li.done {
         &::after, &::before {
-          background-color: $m-color_14;
+          background-color: $primary;
         }
       }
 
@@ -895,11 +880,13 @@
       }
 
       a {
+        font-weight: 600;
         margin-right: 6px;
         border-radius: 20px;
         margin-bottom: 25px;
 
         &:hover, &:active {
+          font-weight: 600;
           margin-right: 6px;
           border-radius: 20px;
           margin-bottom: 25px;
@@ -907,14 +894,14 @@
       }
 
       .disabled a {
-        background-color: $m-color_18;
-        color: $m-color_3;
-        border: solid 1px $m-color_18;
+        background-color: $m-color_2;
+        color: $dark;
+        border: solid 1px $m-color_4;
 
         &:hover, &:active {
-          background-color: $m-color_18;
-          color: $m-color_3;
-          border: solid 1px $m-color_18;
+          background-color: $m-color_2;
+          color: $dark;
+          border: solid 1px $m-color_4;
         }
       }
 
@@ -942,40 +929,36 @@
 
     .steps {
       .done a {
-        border: 1px solid $m-color_18;
-        background-color: $m-color_18;
-        color: $m-color_14;
-        font-weight: 700;
+        border: 1px solid $m-color_4;
+        background-color: transparent;
+        color: $dark;
 
         &:hover, &:active {
-          border: 1px solid $m-color_18;
-          background-color: $m-color_18;
-          color: $m-color_14;
-          font-weight: 700;
+          border: 1px solid $m-color_4;
+          background-color: transparent;
+          color: $dark;
         }
 
         .number {
-          border-color: $m-color_14;
+          border-color: $primary;
         }
       }
 
       ul li.done:not(.last) {
         &::after, &::before {
-          background-color: $m-color_14;
+          background-color: $primary;
         }
       }
 
       .last.current.done a {
-        border: 1px solid $m-color_18;
-        background-color: $m-color_18;
-        color: $m-color_14;
-        font-weight: 700;
+        border: 1px solid $m-color_4;
+        background-color: transparent;
+        color: $dark;
 
         &:hover, &:active {
-          border: 1px solid $m-color_18;
-          background-color: $m-color_18;
-          color: $m-color_14;
-          font-weight: 700;
+          border: 1px solid $m-color_4;
+          background-color: transparent;
+          color: $dark;
         }
       }
     }

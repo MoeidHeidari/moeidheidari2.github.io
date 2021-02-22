@@ -4,17 +4,16 @@
 
 @import '../../base/base';    // Base Variables
 
-
 .custom-file-container {
   box-sizing: border-box;
   position: relative;
   display: block;
 
   label {
-    color: $m-color_14;
+    color: $primary;
 
     .custom-file-container__image-clear {
-      color: $m-color_3;
+      color: $dark;
     }
   }
 }
@@ -61,12 +60,12 @@
   background-clip: padding-box;
   border-radius: .25rem;
   height: auto;
-  border: 1px solid $m-color_12;
-  color: $m-color_14;
+  border: 1px solid $m-color_1;
+  color: $dark;
   font-size: 15px;
   padding: 8px 10px;
   letter-spacing: 1px;
-  background-color: $m-color_12;
+  background-color: $m-color_1;
 }
 
 .custom-file-container__custom-file__custom-file-control__button {
@@ -79,8 +78,9 @@
   height: auto;
   padding: 10px 16px;
   line-height: 1.25;
-  background-color: rgba(0, 150, 136, 0.1);
-  color: $m-color_14;
+  background-color: rgba(27, 85, 226, 0.2392156863);
+  color: $primary;
+  border-left: 1px solid $m-color_3;
   box-sizing: border-box;
 
   &:hover {}
@@ -97,7 +97,7 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-color: $white;
   overflow: auto;
   padding: 15px;
 }

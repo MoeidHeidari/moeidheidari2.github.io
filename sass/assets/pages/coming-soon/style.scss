@@ -13,7 +13,7 @@ body {
   overflow: auto;
   margin: 0;
   padding: 0;
-  background: $m-color_19;
+  background: $white;
 }
 
 .coming-soon-container {
@@ -53,7 +53,7 @@ body {
       font-size: 40px;
       margin-top: 30px;
       font-weight: 700;
-      color: $m-color_4;
+      color: $primary;
       margin-bottom: 0;
       text-shadow: 0px 5px 4px rgba(31, 45, 61, 0.1019607843);
     }
@@ -71,7 +71,7 @@ body {
 
     .days, .hours, .min {
       padding: 28px 0;
-      background: $m-color_14;
+      background: $primary;
       color: $white;
       border-radius: 4px;
       font-weight: 600;
@@ -85,7 +85,7 @@ body {
 
     .sec {
       padding: 28px 0;
-      background: $m-color_14;
+      background: $primary;
       color: $white;
       border-radius: 4px;
       font-weight: 600;
@@ -129,15 +129,14 @@ body {
     font-weight: 700;
     margin-top: 75px;
     margin-bottom: 40px;
-    color: $m-color_4;
   }
 
   .coming-soon-wrap form .field-wrapper {
     svg {
       position: absolute;
       top: 11px;
-      color: $m-color_14;
-      fill: rgba(0, 150, 136, 0.09);
+      color: $primary;
+      fill: rgba(27, 85, 226, 0.2392156863);
       left: 8px;
     }
 
@@ -147,6 +146,10 @@ body {
       &::-webkit-input-placeholder, &::-ms-input-placeholder, &::-moz-placeholder {
         color: $m-color_5;
         font-size: 14px;
+      }
+
+      &:focus {
+        border-bottom: 1px solid $primary;
       }
     }
 
@@ -160,8 +163,6 @@ body {
       right: 0;
       padding: 10px 17px;
       border-bottom-left-radius: 20px;
-      background: $m-color_14;
-      border-color: $m-color_14;
 
       &:hover {
         transform: none;
@@ -171,7 +172,7 @@ body {
 
   .social {
     text-align: center;
-    color: $m-color_14;
+    color: $primary;
     margin: 45px 0 0 0;
 
     li {
@@ -180,12 +181,12 @@ body {
       &:not(:last-child) {
         margin-right: 10px;
         padding-right: 10px;
-        border-right: 2px solid $dark;
+        border-right: 2px solid $m-color_5;
       }
     }
 
     svg {
-      color: $m-color_14;
+      color: $primary;
       width: 20px;
       height: 20px;
     }
@@ -194,12 +195,12 @@ body {
   .terms-conditions {
     max-width: 480px;
     margin: 0 auto;
-    color: $m-color_4;
+    color: $dark;
     font-weight: 600;
     margin-top: 70px;
 
     a {
-      color: $m-color_14;
+      color: $primary;
       font-weight: 700;
     }
   }
@@ -235,7 +236,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $m-color_10;
+    background-color: $m-color_19;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
